@@ -1,0 +1,12 @@
+OS/Dotfiles Plan
+
+OS: Arch Linux
+
+Bar: Polybar
+
+Shell: zsh
+Terminal: Alacritty
+
+Fonts: JetBrains Mono
+
+
