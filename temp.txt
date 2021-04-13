@@ -2,11 +2,18 @@ OS/Dotfiles Plan
 
 OS: Arch Linux
 
+WM:
 Bar: Polybar
+Compositor: Picom
 
-Shell: zsh
+Shell: fish
 Terminal: Alacritty
 
-Fonts: JetBrains Mono
+File Manager:
 
+Assets:
+    Fonts: JetBrains Mono
+    Icons:
+    Cursor:
 
+https://youtu.be/PQgyW10xD8s?t=1097
