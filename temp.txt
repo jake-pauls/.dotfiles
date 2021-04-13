@@ -1,19 +1,46 @@
 OS/Dotfiles Plan
 
+TODO:
+    - Build shell scripts to install config
+
 OS: Arch Linux
 
-WM:
-Bar: Polybar
+WM: Qtile or Xmonad 
+Bar: Polybar or Xmobar (if using Xmonad)
+
+Policy Manager: lxsession (Authentication)
+    System Tray: trayer (if using Xmonad)
+    Network: nm-applet
+    Volume: volumeicon
+    Clipboard: clipman
+    Notifications: dunst
+    Login: lightdm
+    gtk ?: lxappearance
+    run manager: rofi? dmenu?
+
 Compositor: Picom
 
 Shell: fish
-Terminal: Alacritty
+Terminal: Alacritty or Kitty (+ xterm)
 
-File Manager:
+Text Editors:
+    - vim
+    - neovim
+    - Doom Emacs
+
+File Manager: Ranger or Pcmanfm
+
+Audio/Video: vlc
+
+Music: Spotify 
 
 Assets:
     Fonts: JetBrains Mono
     Icons:
     Cursor:
+
+Extras:
+    - Bat
+    -
 
 https://youtu.be/PQgyW10xD8s?t=1097
