@@ -1,5 +1,18 @@
 OS/Dotfiles Plan
 
+Install Steps:
+    - Follow arch wiki almost completely
+        - once chroot'ed run:
+        # pacman -S dhcpcd
+        - check for network interface, in my demo it was "enp3s0..." or something
+        # ip link
+        - start dhcpcd network service
+        # systemctl enable dhcpcd@NETWORK_IERFACE
+        
+        OR
+        # pacman -S NetworkManagern
+        # systemctl enable NetworkManager
+
 TODO:
     - Build shell scripts to install config
 
@@ -32,7 +45,10 @@ File Manager: Ranger or Pcmanfm
 
 Audio/Video: vlc
 
-Music: Spotify 
+Music: Spotify
+    - Spicetify
+Coms: Discord
+    - Mod somehow... 
 
 Assets:
     Fonts: JetBrains Mono
@@ -41,6 +57,7 @@ Assets:
 
 Extras:
     - Bat
-    -
+    - neofetch
+    - pipe-rs
 
 https://youtu.be/PQgyW10xD8s?t=1097
