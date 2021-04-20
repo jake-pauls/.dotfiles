@@ -1,5 +1,12 @@
 OS/Dotfiles Plan
 
+04/20/21
+ - video driver
+ - xorg/picom/nitrogen/xterm/lightdm
+ - xmonad xmonad-contrib
+ - yay -> lightdm-mini-greeter google-chrome (yep, still using chrome for some reason)
+ - systemctl activate lightdm.service
+
 Install Steps:
     - Follow arch wiki almost completely
         - once chroot'ed run:
@@ -13,12 +20,7 @@ Install Steps:
         # pacman -S NetworkManagern
         # systemctl enable NetworkManager
 
-TODO:
-    - Build shell scripts to install config
-
-OS: Arch Linux
-
-WM: Qtile or Xmonad 
+WM: Xmonad 
 Bar: Polybar or Xmobar (if using Xmonad)
 
 Policy Manager: lxsession (Authentication)
@@ -29,7 +31,7 @@ Policy Manager: lxsession (Authentication)
     Notifications: dunst
     Login: lightdm
     gtk ?: lxappearance
-    run manager: rofi? dmenu?
+    run manager: dmenu?
 
 Compositor: Picom
 
