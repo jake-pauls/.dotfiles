@@ -3,8 +3,9 @@ OS/Dotfiles Plan
 04/20/21
  - video driver
  - xorg/picom/nitrogen/xterm/lightdm
- - xmonad xmonad-contrib
- - yay -> lightdm-mini-greeter google-chrome (yep, still using chrome for some reason)
+ - lightdm-litarvan theme thing
+ - awesome 
+ - yay -S google-chrome
  - systemctl activate lightdm.service
 
 Install Steps:
@@ -20,23 +21,14 @@ Install Steps:
         # pacman -S NetworkManagern
         # systemctl enable NetworkManager
 
-WM: Xmonad 
-Bar: Polybar or Xmobar (if using Xmonad)
 
 Policy Manager: lxsession (Authentication)
     System Tray: trayer (if using Xmonad)
-    Network: nm-applet
-    Volume: volumeicon
     Clipboard: clipman
     Notifications: dunst
-    Login: lightdm
-    gtk ?: lxappearance
-    run manager: dmenu?
-
-Compositor: Picom
+    gtk: lxappearance
 
 Shell: fish
-Terminal: Alacritty or Kitty (+ xterm)
 
 Text Editors:
     - vim
@@ -61,5 +53,3 @@ Extras:
     - Bat
     - neofetch
     - pipe-rs
-
-https://youtu.be/PQgyW10xD8s?t=1097

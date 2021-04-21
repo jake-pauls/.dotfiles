@@ -1,4 +1,5 @@
 #!/bin/bash
+# Removes existing files in home directory and symlinks files from .dotfiles repo
 
 # Variables
 dotfiles_path=~/.dotfiles
@@ -11,6 +12,7 @@ dotfiles=(
 	".vimrc"
     ".config/nitrogen"
     ".config/awesome"
+    ".config/polybar"
 )
 
 # Remove dotfiles in home, symlink to .dotfiles repo
