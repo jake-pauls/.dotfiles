@@ -16,11 +16,18 @@ cd ~ && echo "This install script assumes git is installed within a basic arch i
 ## SSH ##
 #########
 sudo pacman -S openssh git
-ssh-keygen -t ecdsa -b 521
 
-echo "\nAdd this public key to your GitHub account if you wish to configure SSH on this machine\n"
+echo "Please enter your GitHub email address: "
+read gh_email && echo "\n"
+
+ssh-keygen -t ed25519 -C $gh_email 
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+echo "\n SSH key generated for this machine, in association with $gh_email"
+echo "\nAdd this public key to your GitHub account before continuing to configure SSH on this machine\n"
 echo "Press [ENTER] to continue..."
-read y
+read enter 
 
 ###############
 ## .dotfiles ##
