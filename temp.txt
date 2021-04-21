@@ -8,22 +8,15 @@ OS/Dotfiles Plan
  - yay -S google-chrome
  - systemctl activate lightdm.service
 
-Install Steps:
-    - Follow arch wiki almost completely
-        - once chroot'ed run:
-        # pacman -S dhcpcd
-        - check for network interface, in my demo it was "enp3s0..." or something
-        # ip link
-        - start dhcpcd network service
-        # systemctl enable dhcpcd@NETWORK_IERFACE
-        
-        OR
-        # pacman -S NetworkManagern
-        # systemctl enable NetworkManager
-
+Remaining TODO:
+    - Configure
+        - Awesome
+        - Alacritty
+        - Neovim
+        - Polybar
+    - Misc. Extensions
 
 Policy Manager: lxsession (Authentication)
-    System Tray: trayer (if using Xmonad)
     Clipboard: clipman
     Notifications: dunst
     gtk: lxappearance
