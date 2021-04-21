@@ -9,6 +9,8 @@ dotfiles=(
 	".gitconfig"
 	".bashrc"
 	".vimrc"
+    ".config/nitrogen"
+    ".config/awesome"
 )
 
 # Remove dotfiles in home, symlink to .dotfiles repo
