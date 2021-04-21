@@ -4,6 +4,7 @@
 # https://github.com/jacob-pauls
 
 # Connects the dots...
+# Feel free to pull this repo using https, ssh configuration is one of the core install steps
 
 ###############
 ## Variables ##
@@ -28,6 +29,10 @@ echo "\n SSH key generated for this machine, in association with $gh_email"
 echo "\nAdd this public key to your GitHub account before continuing to configure SSH on this machine\n"
 echo "Press [ENTER] to continue..."
 read enter 
+
+# Update origin after SSH configuration
+cd ~/.dotfiles 
+git remote set-url origin git@github.com:jacob-pauls/.dotfiles.git
 
 ###############
 ## .dotfiles ##
