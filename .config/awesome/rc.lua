@@ -317,10 +317,8 @@ globalkeys = gears.table.join(
               end,
               {description = "restore minimized", group = "client"}),
 
+    
     -- Prompt
-    awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
-              {description = "run prompt", group = "launcher"}),
-
     awful.key({ modkey }, "x",
               function ()
                   awful.prompt.run {
@@ -331,9 +329,14 @@ globalkeys = gears.table.join(
                   }
               end,
               {description = "lua execute prompt", group = "awesome"}),
+    
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+    awful.key({ modkey }, "p", function() awful.util.spawn("dmenu_run")  end,
+              {description = "show the menubar", group = "launcher"}),
+
+    -- Chrome
+    awful.key({ modkey }, "b", function() awful.util.spawn("google-chrome-stable") end,
+        { description = "launch chrome", group = "apps" })
 )
 
 clientkeys = gears.table.join(
@@ -571,5 +574,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- Autorun
-awful.spawn.with_shell("picom")
 awful.spawn.with_shell("nitrogen --restore")
+awful.spawn.with_shell("picom")

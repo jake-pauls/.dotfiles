@@ -1,10 +1,16 @@
 #!/bin/bash
-
-# These are the packages required for my dotfiles configuration
-# Obviously, this script assumes you've completed a basic Arch installation 
+# Jake Pauls
+# confpkg.sh
 
 ##########################
 ## Package Installation ##
 ##########################
 
-pacman -S xorg xmonad xmonad-contrib lightdm picom nitrogen xterm 
+# OS
+pacman -S xorg awesome lightdm
+
+# UI
+pacman -S picom nitrogen
+
+# Terminal
+pacman -S xterm alacritty 
