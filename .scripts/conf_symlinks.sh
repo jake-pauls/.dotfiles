@@ -15,9 +15,15 @@ dotfiles=(
     ".config/polybar"
 )
 
+if [ ! -d "$HOME/.config" ]
+then
+	echo "Creating .config directory in $HOME"
+	mkdir ~/.config
+fi
+
 # Remove dotfiles in home, symlink to .dotfiles repo
 echo "Symlinking dotfiles to \$HOME"
 for dotfile in "${dotfiles[@]}"; do
-	rm -rf ~/$dotfile
+	rm -rf ~/$dotfile 
 	ln -sf $dotfiles_path/$dotfile ~/$dotfile
 done

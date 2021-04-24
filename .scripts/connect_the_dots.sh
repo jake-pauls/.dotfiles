@@ -41,23 +41,8 @@ git remote set-url origin git@github.com:jacob-pauls/.dotfiles.git
 ## .dotfiles ##
 ###############
 
-# Symlinks 
-echo "Loading configured dotfiles..."
-dotfiles=(
-	".gitconfig"
-	".bashrc"
-	".vimrc"
-    ".config/nitrogen"
-    ".config/awesome"
-    ".config/polybar"
-)
-
-# Remove conflicting dotfiles in home, symlink to .dotfiles repo
-echo "Symlinking dotfiles to \$HOME..."
-for dotfile in "${dotfiles[@]}"; do
-	rm -rf ~/$dotfile
-	ln -sf $dotfiles_path/$dotfile ~/$dotfile
-done
+# Symlink dotfiles
+. "./conf_symlinks.sh"
 
 ###############
 ## yay (AUR) ##
