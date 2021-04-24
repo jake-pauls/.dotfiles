@@ -74,15 +74,14 @@ cd ~
 ##############
 ## Packages ##
 ##############
-# TODO: Consider removing lightdm in favour of startx
 pacman  = (
     "xorg"
-    "lightdm"
-    "lightdm-webkit2-greeter"
-    "lightdm-webkit-theme-litarvan"
+    "xorg-xinit"
+    "firefox"
     "picom"
     "nitrogen"
     "awesome"
+    "dmenu"
     "alacritty"
     "xterm"
     "vim"
@@ -93,9 +92,7 @@ pacman  = (
     "volumeicon"
 )
 
-yay = (
-    "google-chrome"
-)
+yay = ()
 
 
 # Installation
@@ -107,7 +104,4 @@ systemctl enable NetworkManager
 systemctl enable dhcpcd
 
 echo "Successfully connected the dots."
-echo "Before beginning, please complete the lightdm config:"
-echo "\t1. cd '/etc/lightdm/lightdm.conf' and set 'greeter-session=lightdm-webkit2-greeter'"
-echo "\t2. cd '/etc/lightdm/lightdm-webkit2-greeter.conf and set 'webkit-theme = litarvan''"
 echo "Happy hacking!"
