@@ -13,6 +13,9 @@ dotfiles_path=~/.dotfiles
 
 cd ~ && echo "This install script assumes git is installed within a basic arch installation\n"
 
+echo "Checking for system updates..."
+sudo pacman -Syu
+
 #########
 ## SSH ##
 #########
@@ -25,8 +28,8 @@ ssh-keygen -t ed25519 -C $gh_email
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 
-echo "\n SSH key generated for this machine, in association with $gh_email"
-echo "\nAdd this public key to your GitHub account before continuing to configure SSH on this machine\n"
+echo "SSH key generated for this machine, in association with $gh_email"
+echo "Add this public key to your GitHub account before continuing to configure SSH on this machine"
 echo "Press [ENTER] to continue..."
 read enter 
 
@@ -71,7 +74,7 @@ cd ~
 ##############
 ## Packages ##
 ##############
-
+# TODO: Consider removing lightdm in favour of startx
 pacman  = (
     "xorg"
     "lightdm"
