@@ -4,6 +4,7 @@
 # https://github.com/jacob-pauls
 
 # Connects the dots...
+# Assumptions: Clean Arch install with git and networking configured
 # Feel free to pull this repo using https, ssh configuration is one of the core install steps
 
 ###############
@@ -19,7 +20,7 @@ sudo pacman -Syu
 #########
 ## SSH ##
 #########
-sudo pacman -S openssh git
+sudo pacman -S openssh
 
 echo "Please enter your GitHub email address: "
 read gh_email && echo "\n"
@@ -59,7 +60,10 @@ cd ~
 ##############
 ## Packages ##
 ##############
+
+# Replace "nvidia" with required graphics driver
 pacman  = (
+    "nvidia" 
     "xorg"
     "xorg-xinit"
     "firefox"
@@ -71,10 +75,8 @@ pacman  = (
     "xterm"
     "vim"
     "neovim"
-    "NetworkManager"
-    "dhcpcd"
-    "network-manager-applet"
-    "volumeicon"
+    "ranger"
+    "pcmanfm"
 )
 
 yay = ()
@@ -83,10 +85,6 @@ yay = ()
 # Installation
 sudo pacman -S ${pacman[@]}
 yay -S ${yay[@]}
-
-# Networking
-systemctl enable NetworkManager
-systemctl enable dhcpcd
 
 echo "Successfully connected the dots."
 echo "Happy hacking!"

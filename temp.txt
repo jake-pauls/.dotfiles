@@ -1,25 +1,10 @@
 OS/Dotfiles Plan
 
-04/20/21
- - video driver
- - xorg/picom/nitrogen/xterm/lightdm
- - lightdm-litarvan theme thing
- - awesome 
- - yay -S google-chrome
- - systemctl activate lightdm.service
-
-Remaining TODO:
-    - Configure
-        - Awesome
-        - Alacritty
-        - Neovim
-        - Polybar
-    - Misc. Extensions
-
 Policy Manager: lxsession (Authentication)
+    Screenshot?
     Clipboard: clipman
     Notifications: dunst
-    gtk: lxappearance
+    gtk/qT icons/theme?
 
 Shell: fish
 
@@ -28,7 +13,7 @@ Text Editors:
     - neovim
     - Doom Emacs
 
-File Manager: Ranger or Pcmanfm
+File Manager: Ranger and Pcmanfm
 
 Audio/Video: vlc
 
