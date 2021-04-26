@@ -20,10 +20,11 @@ sudo pacman -Syu
 #########
 ## SSH ##
 #########
+echo "Installing openssh..."
 sudo pacman -S openssh
 
 echo "Please enter your GitHub email address: "
-read gh_email && echo "\n"
+read gh_email
 
 ssh-keygen -t ed25519 -C $gh_email 
 eval "$(ssh-agent -s)"
@@ -46,6 +47,7 @@ git remote set-url origin git@github.com:jacob-pauls/.dotfiles.git
 ###############
 
 # Symlink dotfiles
+cd ~/.dotfiles/.scripts
 . "./conf_symlinks.sh"
 
 ###############
@@ -65,7 +67,7 @@ cd ~
 ##############
 
 # Replace "nvidia" with required graphics driver
-pacman  = (
+pacman=(
     "nvidia" 
     "xorg"
     "xorg-xinit"
@@ -83,7 +85,7 @@ pacman  = (
     "discord"
 )
 
-yay = (
+yay=(
     "spotify"
 )
 
@@ -93,4 +95,4 @@ sudo pacman -S ${pacman[@]}
 yay -S ${yay[@]}
 
 echo "Successfully connected the dots."
-echo "Happy hacking!"
+echo "Please reboot! Otherwise, happy hacking!"
