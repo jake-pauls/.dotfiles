@@ -31,6 +31,9 @@ ssh-add ~/.ssh/id_ed25519
 
 echo "SSH key generated for this machine, in association with $gh_email"
 echo "Add this public key to your GitHub account before continuing to configure SSH on this machine"
+
+cat ~/.ssh/id_ed25519.pub
+
 echo "Press [ENTER] to continue..."
 read enter 
 
@@ -77,9 +80,12 @@ pacman  = (
     "neovim"
     "ranger"
     "pcmanfm"
+    "discord"
 )
 
-yay = ()
+yay = (
+    "spotify"
+)
 
 
 # Installation
