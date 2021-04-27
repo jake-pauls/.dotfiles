@@ -1,7 +1,5 @@
 <h1 align="center">.dotfiles</h1>
 
----
-
 ## Overview
 There's nothing here yet.
 
@@ -35,6 +33,7 @@ grub-install --target=i386-pc /dev/sdX
 os-prober
 ```
 **Note: A log should appear signifying a recognized windows installation, for me - it recognized the __system reserved__ partition in particular.**
+
 4. Create the grub configuration file
 ```
 grub-mkconfig -o /boot/grub/grub.cfg
