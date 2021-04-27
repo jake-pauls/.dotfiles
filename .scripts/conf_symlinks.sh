@@ -13,6 +13,7 @@ dotfiles=(
     ".config/nitrogen"
     ".config/awesome"
     ".config/polybar"
+    ".config/picom"
 )
 
 if [ ! -d "$HOME/.config" ]
