@@ -1,12 +1,11 @@
-<h1 align="center">.dotfiles</h1>
+<h1 align="center">.dotfiles (aka: my life in archlinux)</h1>
 
 ## Overview
 There's nothing here yet.
 
 ## Installation
-Note: These dotfiles are not being maintained in a versatile way to suit every machine.
-Please consider the options bootstrapped and modify the packages to suit your needs.
-Also, ensure you grab the proper video drivers for your graphics card. My configuration installs `nvidia`.
+Note: Ensure you grab the proper video drivers for your graphics card.
+My configuration installis the `nvidia` proprietary drivers.
 
 To grab my latest configuration, clone this repository and run the following:
 ```

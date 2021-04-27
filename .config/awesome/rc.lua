@@ -698,3 +698,4 @@ beautiful.useless_gap = 5
 -- Autorun 
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("nitrogen --restore")
+-- awful.spwan.with_shell("$HOME/.config/polybar/launch.sh") -- polybar config
