@@ -83,6 +83,10 @@ pacman=(
     "ranger"
     "pcmanfm"
     "discord"
+    "dhcpcd"
+    "networkmanager"
+    "alsa-utils"
+    "unzip"
 )
 
 yay=(

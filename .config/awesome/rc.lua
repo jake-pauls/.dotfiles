@@ -444,7 +444,7 @@ globalkeys = mytable.join(
               {description = "run browser", group = "jake-pauls"}),
 
     -- Dmenu
-    awful.key({ modkey }, "p", function() awful.util.spawn("demnu_run") end,
+    awful.key({ modkey }, "p", function() awful.util.spawn("dmenu_run") end,
               {description = "run dmenu", group = "jake-pauls"})
 )
 
