@@ -1,13 +1,11 @@
-OS/Dotfiles Plan
-
 Policy Manager: lxsession (Authentication)
-    Screenshot?
-    Clipboard: clipman
-    Notifications: dunst
-    gtk/qT icons/theme?
+
+Screenshot?
+Clipboard: clipman
+Notifications: dunst
+gtk/qT icons/theme?
 
 Shell: fish
-
 Text Editors:
     - vim
     - neovim
@@ -18,9 +16,7 @@ File Manager: Ranger and Pcmanfm
 Audio/Video: vlc
 
 Music: Spotify
-    - Spicetify
 Coms: Discord
-    - Mod somehow... 
 
 Assets:
     Fonts: JetBrains Mono
