@@ -86,9 +86,12 @@ pacman=(
     "networkmanager"
     "alsa-utils"
     "unzip"
+    "lxappearance"
 )
 
 yay=(
+    "qogir-gtk-theme"
+    "qogir-icon-theme"
     "spotify"
 )
 

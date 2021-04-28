@@ -10,6 +10,7 @@ dotfiles=(
 	".gitconfig"
 	".bashrc"
 	".vimrc"
+    ".Xresources"
     ".config/nitrogen"
     ".config/awesome"
     ".config/polybar"
