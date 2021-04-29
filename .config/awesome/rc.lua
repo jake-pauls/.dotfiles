@@ -688,9 +688,8 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 beautiful.useless_gap = 5
 
 -- Systray
-beautiful.systray_icon_spacing = 3 
+beautiful.systray_icon_spacing = 5 
 
--- Autorun 
-awful.spawn.with_shell("picom")
-awful.spawn.with_shell("nitrogen --restore")
--- awful.spwan.with_shell("$HOME/.config/polybar/launch.sh") -- polybar config
+-- Autorun
+awful.spawn.with_shell("nitrogen --restore") 
+awful.spawn.with_shell("picom --experimental-backends")

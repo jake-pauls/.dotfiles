@@ -10,6 +10,7 @@ local lain  = require("lain")
 local awful = require("awful")
 local wibox = require("wibox")
 local dpi   = require("beautiful.xresources").apply_dpi
+local beautiful = require("beautiful")
 
 local os = os
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
@@ -45,8 +46,6 @@ theme.widget_fs                                 = theme.confdir .. "/icons/fs.pn
 theme.widget_mem                                = theme.confdir .. "/icons/mem.png"
 theme.widget_note                               = theme.confdir .. "/icons/note.png"
 theme.widget_note_on                            = theme.confdir .. "/icons/note_on.png"
-theme.widget_netdown                            = theme.confdir .. "/icons/net_down.png"
-theme.widget_netup                              = theme.confdir .. "/icons/net_up.png"
 theme.widget_mail                               = theme.confdir .. "/icons/mail.png"
 theme.widget_batt                               = theme.confdir .. "/icons/bat.png"
 theme.widget_clock                              = theme.confdir .. "/icons/clock.png"
@@ -95,7 +94,7 @@ local markup = lain.util.markup
 -- Textclock
 os.setlocale(os.getenv("LANG")) -- to localize the clock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
-local mytextclock = wibox.widget.textclock(markup(theme.fg_focus, "  ") .. markup(theme.fg_focus, " %H:%M "))
+local mytextclock = wibox.widget.textclock(markup(theme.fg_focus, "   | ") .. markup(theme.fg_focus, " %H:%M "))
 mytextclock.font = theme.font
 
 -- CPU
@@ -137,25 +136,6 @@ theme.volume = lain.widget.alsa({
         end
 
         widget:set_markup(markup.fontfg(theme.font, "#7493d2", volume_now.level .. "% "))
-    end
-})
-
--- Net
-local netdownicon = wibox.widget.imagebox(theme.widget_netdown)
-local netdowninfo = wibox.widget.textbox()
-local netupicon = wibox.widget.imagebox(theme.widget_netup)
-local netupinfo = lain.widget.net({
-    settings = function()
-        --[[ uncomment if using the weather widget
-        if iface ~= "network off" and
-           string.match(theme.weather.widget.text, "N/A")
-        then
-            theme.weather.update()
-        end
-        --]]
-
-        widget:set_markup(markup.fontfg(theme.font, "#e54c62", net_now.sent .. " "))
-        netdowninfo:set_markup(markup.fontfg(theme.font, "#87af5f", net_now.received .. " "))
     end
 })
 
@@ -228,6 +208,7 @@ function theme.at_screen_connect(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             --s.mylayoutbox,
+            s.mylauncher,
             s.mytaglist,
             s.mypromptbox,
             --mpdicon,
@@ -240,10 +221,6 @@ function theme.at_screen_connect(s)
             wibox.widget.systray(),
             --mailicon,
             --theme.mail.widget,
-            --netdownicon,
-            --netdowninfo,
-            --netupicon,
-            --netupinfo.widget,
             --volicon,
             --theme.volume.widget,
             --memicon,
@@ -263,21 +240,6 @@ function theme.at_screen_connect(s)
         },
     }
 
-    -- Create the bottom wibox
-    --s.mybottomwibox = awful.wibar({ position = "bottom", screen = s, border_width = 0, height = dpi(20), bg = theme.bg_normal, fg = theme.fg_normal })
-
-    -- Add widgets to the bottom wibox
-    --s.mybottomwibox:setup {
-    --    layout = wibox.layout.align.horizontal,
-    --    { -- Left widgets
-    --        layout = wibox.layout.fixed.horizontal,
-    --    },
-    --    s.mytasklist, -- Middle widget
-    --    { -- Right widgets
-    --        layout = wibox.layout.fixed.horizontal,
-    --        s.mylayoutbox,
-    --    },
-    --}
 end
 
 return theme
