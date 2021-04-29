@@ -21,6 +21,8 @@ local hotkeys_popup = require("awful.hotkeys_popup")
                       require("awful.hotkeys_popup.keys")
 local mytable       = awful.util.table or gears.table -- 4.{0,1} compatibility
 
+-- Notification sizes
+naughty.config.defaults["icon_size"] = 50 
 
 -- Startup Errors
 if awesome.startup_errors then
@@ -438,7 +440,11 @@ globalkeys = mytable.join(
 
     -- Dmenu
     awful.key({ modkey }, "p", function() awful.util.spawn("dmenu_run") end,
-              {description = "run dmenu", group = "jake-pauls"})
+              {description = "run dmenu", group = "jake-pauls"}),
+
+    -- Discord
+    awful.key({ modkey }, "d", function() awful.util.spawn("discord") end,
+              {description = "launch discord", group = "jake-pauls"})
 )
 
 clientkeys = mytable.join(
@@ -457,7 +463,7 @@ clientkeys = mytable.join(
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
               {description = "move to master", group = "client"}),
     awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
-              {description = "move to screen", group = "client"}),
+              {description = "move client to other screen", group = "client"}),
     awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end,
               {description = "toggle keep on top", group = "client"}),
     awful.key({ modkey,           }, "n",

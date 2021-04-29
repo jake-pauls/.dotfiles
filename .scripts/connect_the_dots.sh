@@ -85,6 +85,9 @@ pacman=(
     "discord"
     "networkmanager"
     "alsa-utils"
+    "pulseaudio"
+    "pulseaudio-alsa"
+    "systemctl"
     "unzip"
     "lxappearance"
 )
