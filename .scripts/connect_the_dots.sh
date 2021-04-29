@@ -71,6 +71,7 @@ pacman=(
     "nvidia" 
     "xorg"
     "xorg-xinit"
+    "neofetch"
     "firefox"
     "picom"
     "nitrogen"
@@ -90,12 +91,15 @@ pacman=(
     "systemctl"
     "unzip"
     "lxappearance"
+    "noto-fonts"
+    "papirus-icon-theme"
 )
 
 yay=(
+    "spotify"
+    "nerd-fonts-complete"
     "qogir-gtk-theme"
     "qogir-icon-theme"
-    "spotify"
 )
 
 

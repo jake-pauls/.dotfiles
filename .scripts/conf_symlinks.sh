@@ -13,6 +13,7 @@ dotfiles=(
     ".Xresources"
     ".config/nitrogen"
     ".config/awesome"
+    ".config/alacritty"
     ".config/polybar"
     ".config/picom"
 )
