@@ -91,12 +91,9 @@ pacman=(
     "systemctl"
     "unzip"
     "lxappearance"
-    "noto-fonts"
-    "papirus-icon-theme"
 )
 
 yay=(
-    "spotify"
     "nerd-fonts-complete"
     "qogir-gtk-theme"
     "qogir-icon-theme"

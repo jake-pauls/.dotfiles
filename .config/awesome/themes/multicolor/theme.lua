@@ -42,7 +42,6 @@ theme.widget_temp                               = theme.confdir .. "/icons/temp.
 theme.widget_uptime                             = theme.confdir .. "/icons/ac.png"
 theme.widget_cpu                                = theme.confdir .. "/icons/cpu.png"
 theme.widget_weather                            = theme.confdir .. "/icons/dish.png"
-theme.widget_fs                                 = theme.confdir .. "/icons/fs.png"
 theme.widget_mem                                = theme.confdir .. "/icons/mem.png"
 theme.widget_note                               = theme.confdir .. "/icons/note.png"
 theme.widget_note_on                            = theme.confdir .. "/icons/note_on.png"
@@ -50,8 +49,8 @@ theme.widget_mail                               = theme.confdir .. "/icons/mail.
 theme.widget_batt                               = theme.confdir .. "/icons/bat.png"
 theme.widget_clock                              = theme.confdir .. "/icons/clock.png"
 theme.widget_vol                                = theme.confdir .. "/icons/spkr.png"
-theme.taglist_squares_sel                       = theme.confdir .. "/icons/square_a.png"
-theme.taglist_squares_unsel                     = theme.confdir .. "/icons/square_b.png"
+--theme.taglist_squares_sel                       = theme.confdir .. "/icons/square_a.png"
+--theme.taglist_squares_unsel                     = theme.confdir .. "/icons/square_b.png"
 theme.tasklist_plain_task_name                  = true
 theme.tasklist_disable_icon                     = true
 theme.useless_gap                               = 0
@@ -94,7 +93,7 @@ local markup = lain.util.markup
 -- Textclock
 os.setlocale(os.getenv("LANG")) -- to localize the clock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
-local mytextclock = wibox.widget.textclock(markup(theme.fg_focus, "   | ") .. markup(theme.fg_focus, " %H:%M "))
+local mytextclock = wibox.widget.textclock(markup(theme.fg_focus, " %H:%M  ") .. markup(theme.fg_focus, " %m/%d/%y   "))
 mytextclock.font = theme.font
 
 -- CPU
@@ -200,25 +199,28 @@ function theme.at_screen_connect(s)
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(14), bg = theme.bg_normal, fg = theme.fg_normal })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(15), bg = theme.bg_normal, fg = theme.fg_normal })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
+        expand = "none",
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             --s.mylayoutbox,
-            s.mylauncher,
             s.mytaglist,
             s.mypromptbox,
             --mpdicon,
             --theme.mpd.widget,
         },
-        --s.mytasklist, -- Middle widget
-        nil, 
+        { -- Middle widgets
+            layout = wibox.layout.fixed.horizontal,
+            mytextclock,
+            --s.mytasklist,
+        },
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            wibox.widget.systray(),
+            wibox.layout.margin(wibox.widget.systray(), 5, 5, 5, 5),
             --mailicon,
             --theme.mail.widget,
             --volicon,
@@ -227,8 +229,6 @@ function theme.at_screen_connect(s)
             --memory.widget,
             --cpuicon,
             --cpu.widget,
-            --fsicon,
-            --theme.fs.widget,
             --weathericon,
             --theme.weather.widget,
             --tempicon,
@@ -236,7 +236,6 @@ function theme.at_screen_connect(s)
             --baticon,
             --bat.widget,
             --clockicon,
-            mytextclock,
         },
     }
 
