@@ -147,7 +147,7 @@ local myawesomemenu = {
 
 local mymainmenu = freedesktop.menu.build {
     before = {
-        { "Awesome", myawesomemenu, beautiful.awesome_icon },
+        { "Awesome", myawesomemenu },
         -- other triads can be put here
     },
     after = {
@@ -155,13 +155,6 @@ local mymainmenu = freedesktop.menu.build {
         -- other triads can be put here
     }
 }
-
--- hide menu when mouse leaves it
---mymainmenu.wibox:connect_signal("mouse::leave", function() mymainmenu:hide() end)
-
--- Set the Menubar terminal for applications that require it
---menubar.utils.terminal = terminal
--- }}}
 
 -- {{{ Screen
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
@@ -693,6 +686,9 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- Window Gaps
 beautiful.useless_gap = 5
+
+-- Systray
+beautiful.systray_icon_spacing = 3 
 
 -- Autorun 
 awful.spawn.with_shell("picom")

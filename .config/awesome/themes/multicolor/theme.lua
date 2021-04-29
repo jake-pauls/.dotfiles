@@ -23,8 +23,8 @@ theme.bg_normal                                 = "#000000"
 theme.bg_focus                                  = "#000000"
 theme.bg_urgent                                 = "#000000"
 theme.fg_normal                                 = "#aaaaaa"
-theme.fg_focus                                  = "#ff8c00"
-theme.fg_urgent                                 = "#af1d18"
+theme.fg_focus                                  = "#b30000"
+theme.fg_urgent                                 = "#0c1b2b"
 theme.fg_minimize                               = "#ffffff"
 theme.border_width                              = dpi(1)
 theme.border_normal                             = "#1c2022"
@@ -34,7 +34,7 @@ theme.menu_border_width                         = 0
 theme.menu_width                                = dpi(130)
 theme.menu_submenu_icon                         = theme.confdir .. "/icons/submenu.png"
 theme.menu_fg_normal                            = "#aaaaaa"
-theme.menu_fg_focus                             = "#ff8c00"
+theme.menu_fg_focus                             = "#b30000"
 theme.menu_bg_normal                            = "#050505dd"
 theme.menu_bg_focus                             = "#050505dd"
 theme.widget_temp                               = theme.confdir .. "/icons/temp.png"
@@ -95,7 +95,7 @@ local markup = lain.util.markup
 -- Textclock
 os.setlocale(os.getenv("LANG")) -- to localize the clock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
-local mytextclock = wibox.widget.textclock(markup("#de5e1e", " %H:%M "))
+local mytextclock = wibox.widget.textclock(markup(theme.fg_focus, "  ") .. markup(theme.fg_focus, " %H:%M "))
 mytextclock.font = theme.font
 
 -- CPU
