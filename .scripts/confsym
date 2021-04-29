@@ -7,10 +7,12 @@ dotfiles_path=~/.dotfiles
 # dotfiles to symlink
 echo "Loading configured dotfiles..."
 dotfiles=(
-	".gitconfig"
+	".profile"
+    ".gitconfig"
 	".bashrc"
 	".vimrc"
     ".Xresources"
+    ".xinitrc"
     ".config/nitrogen"
     ".config/awesome"
     ".config/alacritty"

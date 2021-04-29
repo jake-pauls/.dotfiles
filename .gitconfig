@@ -3,5 +3,11 @@
 # https://github.com/jacob-pauls
 
 [user]
-    email=jakepauls99@gmail.com
     name=jacob-pauls
+    email=jakepauls99@gmail.com
+
+[credential]
+    helper=cache --timeout 86400
+
+[core]
+    editor=nvim

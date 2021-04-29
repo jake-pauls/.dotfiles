@@ -48,7 +48,7 @@ git remote set-url origin git@github.com:jacob-pauls/.dotfiles.git
 
 # Symlink dotfiles
 cd ~/.dotfiles/.scripts
-. "./conf_symlinks.sh"
+confsym
 
 ###############
 ## yay (AUR) ##
