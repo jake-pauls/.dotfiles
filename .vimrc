@@ -1,3 +1,7 @@
+" Jake Pauls
+" https://jacobpauls.dev
+" https://github.com/jacob-pauls
+
 syntax on
 
 set noerrorbells
