@@ -7,9 +7,10 @@ There's nothing here yet.
 Note: Ensure you grab the proper video drivers for your graphics card.
 My configuration installis the `nvidia` proprietary drivers.
 
-To grab my latest configuration, clone this repository and run the following:
+To grab my latest configuration, clone this repository in your root directory and run the following:
 ```
-bash .dotfiles/.scripts/connect_the_dots.sh
+# ~/.dotfiles/.scripts/...
+./connect-the-dots
 ```
 
 ## Dual Booting Arch/Windows (Legacy/BIOS)

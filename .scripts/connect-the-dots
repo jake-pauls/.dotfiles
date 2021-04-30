@@ -79,6 +79,7 @@ pacman=(
     "dmenu"
     "alacritty"
     "xterm"
+    "fish"
     "vim"
     "neovim"
     "ripgrep"
@@ -97,6 +98,8 @@ pacman=(
 )
 
 yay=(
+    "fisher"
+    "starship"
     "nerd-fonts-complete"
     "qogir-gtk-theme"
     "qogir-icon-theme"
