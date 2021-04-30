@@ -13,6 +13,7 @@ dotfiles=(
 	".vimrc"
     ".Xresources"
     ".xinitrc"
+    ".config/nvim"
     ".config/nitrogen"
     ".config/awesome"
     ".config/alacritty"
