@@ -287,7 +287,7 @@
     #   - (Linux/BSD) xdg-open
     #   - (Windows) explorer
     launcher:
-      program: xdg-open
+      program: firefox
       args: []
 
     # URL modifiers

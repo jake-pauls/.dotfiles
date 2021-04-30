@@ -1,7 +1,3 @@
-" Jake Pauls
-" https://jacobpauls.dev
-" https://github.com/jacob-pauls
-
 ""
 "" General Sets
 ""
@@ -11,6 +7,7 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set nowrap
 
 " Line Numbers
 set relativenumber
@@ -19,6 +16,7 @@ set nu
 " History
 set noswapfile
 set nobackup
+set undodir=~/.vim/undodir
 set undofile
 
 " Navigation
@@ -33,5 +31,5 @@ set noshowmode
 set completeopt=menuone,noinsert,noselect
 set hidden
 set noerrorbells
-set nowrap
 set signcolumn=yes
+set cmdheight=2

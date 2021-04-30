@@ -26,7 +26,7 @@ sudo pacman -S openssh
 echo "Please enter your GitHub email address: "
 read gh_email
 
-ssh-keygen -t ed25519 -C $gh_email 
+ssh-keygen -t ed25519 -C $gh_email
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 
@@ -36,10 +36,10 @@ echo "Add this public key to your GitHub account before continuing to configure 
 cat ~/.ssh/id_ed25519.pub
 
 echo "Press [ENTER] to continue..."
-read enter 
+read enter
 
 # Update origin after SSH configuration
-cd ~/.dotfiles 
+cd ~/.dotfiles
 git remote set-url origin git@github.com:jacob-pauls/.dotfiles.git
 
 ###############
@@ -68,7 +68,7 @@ cd ~
 
 # Replace "nvidia" with required graphics driver
 pacman=(
-    "nvidia" 
+    "nvidia"
     "xorg"
     "xorg-xinit"
     "neofetch"
@@ -81,6 +81,9 @@ pacman=(
     "xterm"
     "vim"
     "neovim"
+    "ripgrep"
+    "bat"
+    "fd"
     "ranger"
     "pcmanfm"
     "discord"
