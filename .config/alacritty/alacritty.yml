@@ -3,7 +3,7 @@
 # https://github.com/jacob-pauls
 
  env:
-  TERM: xterm-256color 
+  TERM: xterm-256color
 
  window:
   # Window dimensions (changes require restart)
@@ -18,11 +18,11 @@
 
   # Window padding (changes require restart)
   padding:
-    x: 2 
-    y: 2 
+    x: 2
+    y: 2
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: true 
+  dynamic_padding: true
 
   # Window decorations
   #
@@ -49,34 +49,34 @@
     instance: Alacritty
     general: Alacritty
 
-  gtk_theme_variant: None 
+  gtk_theme_variant: None
 
  scrolling:
   history: 10000
-  multiplier: 2 
+  multiplier: 2
 
  font:
   normal:
-    family: JetBrains Mono Nerd Font 
+    family: JetBrains Mono Nerd Font
     style: Regular
-  
+
   bold:
-    family: JetBrains Mono Nerd Font 
+    family: JetBrains Mono Nerd Font
     style: Bold
 
   italic:
-    family: JetBrains Mono Nerd Font 
+    family: JetBrains Mono Nerd Font
     style: Italic
 
   bold_italic:
-    family: JetBrains Mono Nerd Font 
+    family: JetBrains Mono Nerd Font
     style: Bold Italic
 
   size: 14.0
 
   offset:
     x: 0
-    y: 1 
+    y: 1
 
   glyph_offset:
     x: 0
@@ -109,15 +109,14 @@
 
     gruvbox: &gruvbox
      primary:
-      # background: '#282828'
-      background: '#1d2021'
+      background: '#282828'
       foreground: '#ebdbb2'
 
      cursor:
       text: '#000000'
       cursor: '#FFFAEE'
 
-      # Normal colors
+     # Normal colors
      normal:
       black:   '#282828'
       red:     '#cc241d'
@@ -128,7 +127,7 @@
       cyan:    '#689d6a'
       white:   '#a89984'
 
-      # Bright colors
+     # Bright colors
      bright:
       black:   '#928374'
       red:     '#fb4934'
@@ -138,9 +137,9 @@
       magenta: '#d3869b'
       cyan:    '#8ec07c'
       white:   '#ebdbb2'
-    
 
- colors: *gruvbox 
+
+ colors: *gruvbox
 
 # Bell
 #
@@ -187,7 +186,7 @@
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
- background_opacity: 1 
+ background_opacity: 1
 
 #selection:
   # This string contains all characters that are used as separators for
@@ -206,7 +205,7 @@
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
-    shape: Block 
+    shape: Block
 
     # Cursor blinking state
     #
@@ -273,7 +272,7 @@
   #triple_click: { threshold: 300 }
 
   # If this is `true`, the cursor is temporarily hidden when typing.
-  hide_when_typing: true 
+  hide_when_typing: true
 
   url:
     # URL launcher

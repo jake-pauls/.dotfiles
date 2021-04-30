@@ -9,7 +9,7 @@ local gears         = require("gears")
 local awful         = require("awful")
                       require("awful.autofocus")
 
--- Widgets and Layouts 
+-- Widgets and Layouts
 local wibox         = require("wibox")
 
 -- Theme Handling
@@ -22,7 +22,7 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 local mytable       = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 -- Notification sizes
-naughty.config.defaults["icon_size"] = 50 
+naughty.config.defaults["icon_size"] = 50
 
 -- Startup Errors
 if awesome.startup_errors then
@@ -62,10 +62,10 @@ run_once({ "unclutter -root" }) -- comma-separated entries
 
 -- Themes
 local themes = {
-    "multicolor",      -- 1 
-    "powerarrow",      -- 2 
-    "powerarrow-dark", -- 3 
-    "rainbow",         -- 4 
+    "multicolor",      -- 1
+    "powerarrow",      -- 2
+    "powerarrow-dark", -- 3
+    "rainbow",         -- 4
 }
 local chosen_theme = themes[1]
 
@@ -80,7 +80,7 @@ local browser      = "firefox"
 
 -- Layouts
 awful.util.terminal = terminal
-awful.util.tagnames = { "1", "2", "3", "4", "5" }
+awful.util.tagnames = { "一", "二", "三", "四", "五" }
 awful.layout.layouts = {
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
@@ -688,8 +688,8 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 beautiful.useless_gap = 5
 
 -- Systray
-beautiful.systray_icon_spacing = 5 
+beautiful.systray_icon_spacing = 5
 
 -- Autorun
-awful.spawn.with_shell("nitrogen --restore") 
+awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("picom --experimental-backends")

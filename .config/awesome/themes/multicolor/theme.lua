@@ -5,12 +5,12 @@
 
 --]]
 
-local gears = require("gears")
-local lain  = require("lain")
-local awful = require("awful")
-local wibox = require("wibox")
-local dpi   = require("beautiful.xresources").apply_dpi
+local gears     = require("gears")
+local lain      = require("lain")
+local awful     = require("awful")
+local wibox     = require("wibox")
 local beautiful = require("beautiful")
+local dpi       = beautiful.xresources.apply_dpi
 
 local os = os
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
@@ -18,26 +18,27 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 local theme                                     = {}
 theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/multicolor"
 theme.font                                      = "Roboto 6"
-theme.menu_bg_normal                            = "#000000"
-theme.menu_bg_focus                             = "#000000"
-theme.bg_normal                                 = "#000000"
-theme.bg_focus                                  = "#000000"
+theme.menu_bg_normal                            = "#1d2021"
+theme.menu_bg_focus                             = "#928374"
+theme.bg_normal                                 = "#1d2021"
+theme.bg_focus                                  = "#928374"
 theme.bg_urgent                                 = "#000000"
-theme.fg_normal                                 = "#aaaaaa"
-theme.fg_focus                                  = "#b30000"
+theme.fg_normal                                 = "#928374"
+theme.fg_focus                                  = "#fbf1c3"
 theme.fg_urgent                                 = "#0c1b2b"
 theme.fg_minimize                               = "#ffffff"
-theme.border_width                              = dpi(1)
-theme.border_normal                             = "#1c2022"
+theme.border_width                              = dpi(0.5)
+theme.border_normal                             = "#1d2021"
 theme.border_focus                              = "#606060"
 theme.border_marked                             = "#3ca4d8"
 theme.menu_border_width                         = 0
 theme.menu_width                                = dpi(130)
 theme.menu_submenu_icon                         = theme.confdir .. "/icons/submenu.png"
-theme.menu_fg_normal                            = "#aaaaaa"
-theme.menu_fg_focus                             = "#b30000"
-theme.menu_bg_normal                            = "#050505dd"
-theme.menu_bg_focus                             = "#050505dd"
+theme.menu_fg_normal                            = "#fbf1c7"
+theme.menu_fg_focus                             = "#ebdbb2"
+theme.menu_bg_normal                            = "#1d2021"
+theme.menu_bg_focus                             = "#928374"
+theme.arch_launcher                             = theme.confdir .. "/icons/arch.png"
 theme.widget_temp                               = theme.confdir .. "/icons/temp.png"
 theme.widget_uptime                             = theme.confdir .. "/icons/ac.png"
 theme.widget_cpu                                = theme.confdir .. "/icons/cpu.png"
@@ -80,8 +81,7 @@ theme.titlebar_sticky_button_focus_inactive     = theme.confdir .. "/icons/title
 theme.titlebar_sticky_button_normal_active      = theme.confdir .. "/icons/titlebar/sticky_normal_active.png"
 theme.titlebar_sticky_button_focus_active       = theme.confdir .. "/icons/titlebar/sticky_focus_active.png"
 theme.titlebar_floating_button_normal_inactive  = theme.confdir .. "/icons/titlebar/floating_normal_inactive.png"
-theme.titlebar_floating_button_focus_inactive   = theme.confdir .. "/icons/titlebar/floating_focus_inactive.png"
-theme.titlebar_floating_button_normal_active    = theme.confdir .. "/icons/titlebar/floating_normal_active.png"
+theme.titlebar_floating_button_focus_inactive   = theme.confdir .. "/icons/titlebar/floating_focus_inactive.png" theme.titlebar_floating_button_normal_active    = theme.confdir .. "/icons/titlebar/floating_normal_active.png"
 theme.titlebar_floating_button_focus_active     = theme.confdir .. "/icons/titlebar/floating_focus_active.png"
 theme.titlebar_maximized_button_normal_inactive = theme.confdir .. "/icons/titlebar/maximized_normal_inactive.png"
 theme.titlebar_maximized_button_focus_inactive  = theme.confdir .. "/icons/titlebar/maximized_focus_inactive.png"
@@ -199,7 +199,17 @@ function theme.at_screen_connect(s)
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(15), bg = theme.bg_normal, fg = theme.fg_normal })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(16), bg = theme.bg_normal, fg = theme.fg_normal })
+
+    -- Launcher
+    local mylauncher = awful.widget.button({ image = theme.arch_launcher })
+    local mylaunchermenu = awful.menu({
+        items = {
+            { "Shutdown", "poweroff" },
+            { "Restart", "reboot" },
+        }
+    })
+    mylauncher:connect_signal("button::press", function() mylaunchermenu:toggle() end)
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -208,6 +218,7 @@ function theme.at_screen_connect(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             --s.mylayoutbox,
+            mylauncher,
             s.mytaglist,
             s.mypromptbox,
             --mpdicon,
@@ -216,10 +227,10 @@ function theme.at_screen_connect(s)
         { -- Middle widgets
             layout = wibox.layout.fixed.horizontal,
             mytextclock,
-            --s.mytasklist,
         },
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+            s.mytasklist,
             wibox.layout.margin(wibox.widget.systray(), 5, 5, 5, 5),
             --mailicon,
             --theme.mail.widget,
@@ -237,6 +248,7 @@ function theme.at_screen_connect(s)
             --bat.widget,
             --clockicon,
         },
+
     }
 
 end
