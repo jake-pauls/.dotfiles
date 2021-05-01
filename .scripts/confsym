@@ -15,6 +15,7 @@ dotfiles=(
     ".xinitrc"
     ".config/nvim"
     ".config/fish"
+    ".config/starship.toml"
     ".config/nitrogen"
     ".config/awesome"
     ".config/alacritty"

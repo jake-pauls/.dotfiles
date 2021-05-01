@@ -6,12 +6,11 @@
 ## General
 ##
 
+# Remove fish greeting
 set fish_greeting
-set TERM "alacritty"
-set EDITOR "nvim"
 
-# Use neovim for reading manpages
-set -x MANPAGER "nvim -c 'set ft=man' -"
+# Use bat for reading manpages
+set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 # Set autocomplete colors
 set fish_color_normal brwhite
@@ -52,3 +51,8 @@ alias cat="bat"
 # Shells (jic)
 alias bashitup="sudo chsh -s /bin/bash && echo 'Please restart to enter bash!'"
 alias startfishing="sudo chsh -s /bin/fish && echo 'Please restart to enter fish!'"
+
+##
+## Starship
+##
+starship init fish | source
