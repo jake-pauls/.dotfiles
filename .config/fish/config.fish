@@ -40,6 +40,7 @@ alias mv="mv -i"
 alias rm="rm -i"
 
 # Arch
+alias pacman="sudo pacman"
 alias pacgod='yay -Syu'         # Update Standard and AUR Packages
 alias pacup='sudo pacman -Syyu' # Standard Package Update
 alias yayup='yay -Sua'          # Update AUR
@@ -51,6 +52,10 @@ alias cat="bat"
 # Shells (jic)
 alias bashitup="sudo chsh -s /bin/bash && echo 'Please restart to enter bash!'"
 alias startfishing="sudo chsh -s /bin/fish && echo 'Please restart to enter fish!'"
+
+# Navigation
+alias drive="cd / && cd /media/Storage/FileStorage"
+alias projects="cd / && cd /media/Storage/FileStorage/Projects"
 
 ##
 ## Starship

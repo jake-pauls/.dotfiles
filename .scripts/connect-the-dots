@@ -95,6 +95,8 @@ pacman=(
     "systemctl"
     "unzip"
     "lxappearance"
+    "nodejs"
+    "npm"
 )
 
 yay=(
