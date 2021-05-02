@@ -1,5 +1,5 @@
 <h1 align="center">.dotfiles</h1>
-<h3 align="center">aka: my life in archlinux</h3>
+<h3 align="center">aka: my life in archlinux (yes, I did name my machine "skynet")</h3>
 
 <p align="center">
     <img src="skynet.png" alt="Skynet" />
