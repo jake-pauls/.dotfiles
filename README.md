@@ -5,8 +5,6 @@
     <img src="skynet.png" alt="Skynet" />
 </p>
 
----
-
 ## Overview
 - **OS** - [ArchLinux](https://archlinux.org/)
 - **Window Manager** - [Awesome](https://awesomewm.org/)
