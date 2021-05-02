@@ -61,13 +61,7 @@ end
 run_once({ "unclutter -root" }) -- comma-separated entries
 
 -- Themes
-local themes = {
-    "multicolor",      -- 1
-    "powerarrow",      -- 2
-    "powerarrow-dark", -- 3
-    "rainbow",         -- 4
-}
-local chosen_theme = themes[1]
+local chosen_theme = "gruvbox-min"
 
 -- Constants
 local modkey       = "Mod4"
@@ -684,10 +678,8 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
--- Window Gaps
-beautiful.useless_gap = 5
-
 -- Systray
+beautiful.systray_icon_spacing = 5
 beautiful.systray_icon_spacing = 5
 
 -- Autorun
