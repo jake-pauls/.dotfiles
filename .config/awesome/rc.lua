@@ -190,10 +190,14 @@ root.buttons(mytable.join(
 
 -- {{{ Key bindings
 globalkeys = mytable.join(
-    -- Take a screenshot
-    -- https://github.com/lcpz/dots/blob/master/bin/screenshot
-    awful.key({ altkey }, "p", function() os.execute("screenshot") end,
-              {description = "take a screenshot", group = "hotkeys"}),
+    -- Screenshots (scrot)
+    -- Currently focused window
+    awful.key({ altkey }, "p", function() awful.spawn.with_shell("scrot -d 1 -u ~/screenshots/%Y-%m-%d-%T-scrot.png") end,
+              {description = "take a screenshot of the currently focused window", group = "hotkeys"}),
+
+    -- Selection
+    awful.key({ altkey }, "Print", function() awful.spawn.with_shell("scrot -d 1 -s ~/screenshots/%Y-%m-%d-%T-scrot.png") end,
+              {description = "take a screenshot from a selection", group = "hotkeys"}),
 
     -- X screen locker
     awful.key({ altkey, "Control" }, "l", function () os.execute(scrlocker) end,
@@ -580,7 +584,6 @@ awful.rules.rules = {
           "Gpick",
           "Kruler",
           "MessageWin",  -- kalarm.
-          "Sxiv",
           "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
           "Wpa_gui",
           "veromix",

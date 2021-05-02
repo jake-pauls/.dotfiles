@@ -97,6 +97,8 @@ pacman=(
     "lxappearance"
     "nodejs"
     "npm"
+    "scrot"
+    "sxiv"
 )
 
 yay=(
