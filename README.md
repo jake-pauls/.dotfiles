@@ -1,7 +1,33 @@
-<h1 align="center">.dotfiles (aka: my life in archlinux)</h1>
+<h1 align="center">.dotfiles</h1>
+<h4 align="center">aka: my life in archlinux</h4>
+
+---
+
+<p align="center">
+    <img src="skynet.png" alt="Skynet" />
+</p>
+
+---
 
 ## Overview
-There's nothing here yet.
+- **OS** - [ArchLinux](https://archlinux.org/)
+- **Window Manager** - [Awesome](https://awesomewm.org/)
+- **Text Editor** - [Neovim](https://neovim.io/)
+- **Terminal** - [Alacritty](https://github.com/alacritty/alacritty)
+- **Shells**
+  - [bash](https://www.gnu.org/software/bash/)
+  - [fish](https://fishshell.com/) (main)
+- **Shell Prompt** - [Starship](https://starship.rs/)
+- **Package Managers**
+  - [pacman](https://wiki.archlinux.org/title/pacman) (Arch Base Repositories)
+  - [yay](https://github.com/Jguer/yay) (AUR)
+- **File Managers**
+  - [pcmanfm](https://wiki.archlinux.org/title/PCManFM) (GUI)
+  - [ranger](https://github.com/ranger/ranger) (CLI)
+- **CLI Tools (that are currently changing my life)**
+  - [bat](https://github.com/sharkdp/bat)
+  - [ripgrep](https://github.com/BurntSushi/ripgrep)
+  - [fd](https://github.com/sharkdp/fd)
 
 ## Installation
 Note: Ensure you grab the proper video drivers for your graphics card.
@@ -13,7 +39,7 @@ To grab my latest configuration, clone this repository in your root directory an
 ./connect-the-dots
 ```
 
-## Dual Booting Arch/Windows (Legacy/BIOS)
+## Personal Note: Dual Booting Arch/Windows (Legacy/BIOS)
 Couldn't find as many straight forward resources regarding legacy dual booting for Arch/Windows clients.
 The Arch wiki provids some insight, but if your partitioning on both machines was performed correctly - this should work perfectly fine.
 
