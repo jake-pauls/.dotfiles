@@ -9,23 +9,23 @@ fun! Hijack() abort
 endfun
 
 augroup FernHijack
-  autocmd!
-  autocmd BufEnter * ++nested call Hijack()
+    autocmd!
+    autocmd BufEnter * ++nested call Hijack()
 augroup END
 
 " Fern Keybinds
 fun! FernInit() abort
-  nmap <buffer> n <Plug>(fern-action-new-file)
-  nmap <buffer> N <Plug>(fern-action-new-path)
-  nmap <buffer> d <Plug>(fern-action-remove)
-  nmap <buffer> m <Plug>(fern-action-move)
-  nmap <buffer> M <Plug>(fern-action-rename)
-  nmap <buffer> r <Plug>(fern-action-reload)
-  nmap <buffer> c <Plug>(fern-action-copy)
-  nmap <buffer> s <Plug>(fern-action-open:split)
-  nmap <buffer> v <Plug>(fern-action-open:vsplit)
-  nmap <buffer><nowait> < <Plug>(fern-action-leave)
-  nmap <buffer><nowait> > <Plug>(fern-action-enter)
+    nmap <buffer> n <Plug>(fern-action-new-file)
+    nmap <buffer> N <Plug>(fern-action-new-path)
+    nmap <buffer> d <Plug>(fern-action-remove)
+    nmap <buffer> m <Plug>(fern-action-move)
+    nmap <buffer> M <Plug>(fern-action-rename)
+    nmap <buffer> r <Plug>(fern-action-reload)
+    nmap <buffer> c <Plug>(fern-action-copy)
+    nmap <buffer> s <Plug>(fern-action-open:split)
+    nmap <buffer> v <Plug>(fern-action-open:vsplit)
+    nmap <buffer><nowait> < <Plug>(fern-action-leave)
+    nmap <buffer><nowait> > <Plug>(fern-action-enter)
 endfun
 
 augroup FernKeybinds

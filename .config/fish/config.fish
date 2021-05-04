@@ -46,7 +46,6 @@ alias pacup='sudo pacman -Syyu' # Standard Package Update
 alias yayup='yay -Sua'          # Update AUR
 
 # Utils
-alias vim="nvim"
 alias cat="bat"
 
 # Shells (jic)

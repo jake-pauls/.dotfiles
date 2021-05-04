@@ -13,19 +13,25 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
-" Icons (Fern)
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/playground'
+
+" Fern
+Plug 'lambdalisue/fern.vim'
+Plug 'antoinemadec/FixCursorHold.nvim'
+
+" Fern Icons
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 Plug 'lambdalisue/glyph-palette.vim'
 
-" Tree
-Plug 'lambdalisue/fern.vim'
-Plug 'antoinemadec/FixCursorHold.nvim'
-
 " LSP
 Plug 'neovim/nvim-lspconfig'
 
+" Theming
 Plug 'morhetz/gruvbox'
+
 call plug#end()
 
 let mapleader = " "
