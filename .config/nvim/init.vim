@@ -17,13 +17,19 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
 
+" LSP
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
+
 " Tree
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 
-" LSP
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-compe'
+" Statusline
+Plug 'vim-airline/vim-airline'
+
+" Git
+Plug 'tpope/vim-fugitive'
 
 " Theming
 Plug 'morhetz/gruvbox'

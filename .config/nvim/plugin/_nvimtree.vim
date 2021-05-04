@@ -13,7 +13,7 @@ let g:nvim_tree_root_folder_modifier = ':~'
 let g:nvim_tree_tab_open = 0
 let g:nvim_tree_disable_netrw = 0
 let g:nvim_tree_hijack_netrw = 0
-let g:nvim_tree_lsp_diagnostics = 1
+let g:nvim_tree_lsp_diagnostics = 0
 let g:nvim_tree_special_files = ['README.md', 'Makefile', 'Dockerfile', 'docker-compose.yml', 'docker-compose.yaml']
 let g:nvim_tree_show_icons = {'git': 1, 'folders': 1, 'files': 1}
 
