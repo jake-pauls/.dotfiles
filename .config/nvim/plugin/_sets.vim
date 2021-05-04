@@ -24,7 +24,12 @@ set scrolloff=8
 set nohlsearch
 set incsearch
 
+" GUI
+set guicursor=
+set guifont=JetBrains\ Mono\ Nerd\ Font\ 13
+
 " Misc.
+set encoding=utf8
 set exrc
 set guicursor=
 set noshowmode
