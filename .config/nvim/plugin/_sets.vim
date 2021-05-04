@@ -27,6 +27,7 @@ set incsearch
 " GUI
 set guicursor=
 set guifont=JetBrains\ Mono\ Nerd\ Font\ 13
+set termguicolors
 
 " Misc.
 set encoding=utf8

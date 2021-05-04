@@ -192,11 +192,11 @@ root.buttons(mytable.join(
 globalkeys = mytable.join(
     -- Screenshots (scrot)
     -- Currently focused window
-    awful.key({ altkey }, "p", function() awful.spawn.with_shell("scrot -d 1 -u ~/screenshots/%Y-%m-%d-%T-scrot.png") end,
+    awful.key({ altkey }, "p", function() awful.spawn.with_shell("scrot -d 1 -u ~/Screenshots/%Y-%m-%d-%T-scrot.png") end,
               {description = "take a screenshot of the currently focused window", group = "hotkeys"}),
 
     -- Selection
-    awful.key({ altkey }, "Print", function() awful.spawn.with_shell("scrot -d 1 -s ~/screenshots/%Y-%m-%d-%T-scrot.png") end,
+    awful.key({ altkey }, "Print", function() awful.spawn.with_shell("scrot -d 1 -s ~/Screenshots/%Y-%m-%d-%T-scrot.png") end,
               {description = "take a screenshot from a selection", group = "hotkeys"}),
 
     -- X screen locker
