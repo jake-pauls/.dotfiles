@@ -1,6 +1,5 @@
 " Treesitter
 " TODO: Break these plugins into lua files...
-
 lua <<EOF
     require'nvim-treesitter.configs'.setup {
         ensure_installed = {
