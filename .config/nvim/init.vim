@@ -17,18 +17,13 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
 
-" Fern
-Plug 'lambdalisue/fern.vim'
-Plug 'antoinemadec/FixCursorHold.nvim'
-
-" Fern Plugins
-Plug 'lambdalisue/fern-git-status.vim'
-Plug 'lambdalisue/nerdfont.vim'
-Plug 'lambdalisue/fern-renderer-nerdfont.vim'
-Plug 'lambdalisue/glyph-palette.vim'
+" Tree
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 
 " Theming
 Plug 'morhetz/gruvbox'
@@ -36,6 +31,11 @@ Plug 'morhetz/gruvbox'
 call plug#end()
 
 let mapleader = " "
+
+""
+"" Lua
+""
+luafile ~/.config/nvim/plugin/_compe.lua
 
 ""
 "" Utils
@@ -46,7 +46,7 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 
-augroup EDITS
+augroup Edits
     autocmd!
     autocmd BufWritePre * :call TrimWhitespace()
 augroup END
