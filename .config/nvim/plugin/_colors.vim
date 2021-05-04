@@ -7,7 +7,7 @@ fun! WeDoItForTheMakers()
     endif
 
     set background=dark
-    colorscheme gruvbox
+    colorscheme onedark
 
     highlight Normal guibg=none
     highlight LineNr guifg=#5eacd3

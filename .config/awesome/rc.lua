@@ -61,7 +61,7 @@ end
 run_once({ "unclutter -root" }) -- comma-separated entries
 
 -- Themes
-local chosen_theme = "gruvbox-min"
+local chosen_theme = "onedark"
 
 -- Constants
 local modkey       = "Mod4"

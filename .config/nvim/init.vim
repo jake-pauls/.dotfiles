@@ -27,6 +27,7 @@ Plug 'hrsh7th/nvim-compe'
 
 " Theming
 Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
@@ -36,6 +37,8 @@ let mapleader = " "
 "" Lua
 ""
 luafile ~/.config/nvim/plugin/_compe.lua
+luafile ~/.config/nvim/plugin/lsp/_python.lua
+luafile ~/.config/nvim/plugin/lsp/_bash.lua
 
 ""
 "" Utils

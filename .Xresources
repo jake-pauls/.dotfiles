@@ -7,42 +7,42 @@ Xcursor.theme:   Qogir-dark
 Xcursor.size:    16
 
 ! SXIV
-Sxiv.foreground: #ebdbb2
-Sxiv.background: #282828
+Sxiv.foreground: #abb2bf
+Sxiv.background: #1e2127
 Sxiv.font:       Roboto:style=bold:size=6
 
 ! Color Fallbacks
-*.foreground:    #ebdbb2
-*.background:    #282828
+*.foreground:    #abb2bf
+*.background:    #1e2127
 
 ! black
-*.color0:        #282828
-*.color8:        #928374
+*.color0:        #1e2127
+*.color8:        #5c6570
 
 ! red
-*.color1:        #cc241d
-*.color9:        #fb4934
+*.color1:        #e06c75
+*.color9:        #e06c75
 
 ! green
-*.color2:        #98971a
-*.color10:       #b8bb26
+*.color2:        #98c379
+*.color10:       #98c379
 
 ! yellow
-*.color3:        #d79921
-*.color11:       #fabd2f
+*.color3:        #d19a66
+*.color11:       #d19a66
 
 ! blue
-*.color4:        #458588
-*.color12:       #83a598
+*.color4:        #61afef
+*.color12:       #61afef
 
 ! magenta
-*.color5:        #b16286
-*.color13:       #d3869b
+*.color5:        #c678dd
+*.color13:       #c678dd
 
 ! cyan
-*.color6:        #689d6a
-*.color14:       #8ec07c
+*.color6:        #56b6c2
+*.color14:       #56b6c2
 
 ! white
-*.color7:        #a89984
-*.color15:       #ebdbb2
+*.color7:        #abb2bf
+*.color15:       #ffffff

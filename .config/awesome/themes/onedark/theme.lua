@@ -4,8 +4,8 @@
  https://jacobpauls.dev
  https://github.com/jacob-pauls
 
- gruvbox-min
- a subtle, minimal gruvbox theme for awesome
+ onedark
+ a subtle onedark theme for awesome
  inspired and templated by https://github.com/lcpz/awesome-copycats
 
 --]]
@@ -22,24 +22,24 @@ local my_table  = awful.util.table or gears.table
 local theme     = {}
 
 -- Colors and Fonts
-theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/gruvbox-min"
+theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/onedark"
 theme.font                                      = "Roboto 6"
-theme.menu_bg_normal                            = "#1d2021"
-theme.menu_bg_focus                             = "#928374"
-theme.bg_normal                                 = "#1d2021"
-theme.bg_focus                                  = "#928374"
+
+theme.menu_bg_normal                            = "#1e2127"
+theme.menu_bg_focus                             = "#ABB2Bf"
+theme.bg_normal                                 = "#1e2127"
+theme.bg_focus                                  = "#6e7a91"
+
 theme.bg_urgent                                 = "#000000"
-theme.fg_normal                                 = "#928374"
-theme.fg_focus                                  = "#fbf1c3"
+theme.fg_normal                                 = "#ABB2Bf"
+theme.fg_focus                                  = "#ABB2Bf"
 theme.fg_urgent                                 = "#0c1b2b"
 theme.fg_minimize                               = "#ffffff"
-theme.border_normal                             = "#1d2021"
-theme.border_focus                              = "#606060"
-theme.border_marked                             = "#3ca4d8"
-theme.menu_fg_normal                            = "#fbf1c7"
-theme.menu_fg_focus                             = "#ebdbb2"
-theme.menu_bg_normal                            = "#1d2021"
-theme.menu_bg_focus                             = "#928374"
+theme.border_normal                             = "#1e2127"
+theme.border_focus                              = "#ABB2Bf"
+theme.border_marked                             = "#61afef"
+theme.menu_fg_normal                            = "#ABB2Bf"
+theme.menu_fg_focus                             = "#ABB2Bf"
 
 -- Icons
 theme.arch_launcher                             = theme.confdir .. "/icons/arch.png"
