@@ -41,5 +41,10 @@ augroup FernGlyphs
     autocmd FileType fern call glyph_palette#apply()
 augroup END
 
+" Git Status
+let g:fern_git_status#disable_ignored = 1
+let g:fern_git_status#disable_untracked = 1
+let g:fern_git_status#disable_submodules = 1
+
 " Remaps
 nnoremap <silent> <leader>f :Fern . -drawer -reveal=% -toggle -width=35<CR><C-w>=
