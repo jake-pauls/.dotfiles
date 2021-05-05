@@ -26,7 +26,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 
 " Statusline
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -49,6 +49,8 @@ luafile ~/.config/nvim/plugin/lsp/_bash.lua
 ""
 "" Utils
 ""
+
+" Trim whitespace after saving files
 fun! TrimWhitespace()
     let l:save = winsaveview()
     keeppatterns %s/\s\+$//e

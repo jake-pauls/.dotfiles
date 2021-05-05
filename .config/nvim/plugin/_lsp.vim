@@ -1,3 +1,5 @@
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+
 " General Remaps
 nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
