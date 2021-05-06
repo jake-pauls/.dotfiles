@@ -14,6 +14,7 @@ dotfiles=(
     ".Xresources"
     ".xinitrc"
     ".config/nvim"
+    ".config/zathura"
     ".config/fish"
     ".config/starship.toml"
     ".config/nitrogen"

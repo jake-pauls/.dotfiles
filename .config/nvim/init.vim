@@ -42,7 +42,11 @@ let mapleader = " "
 ""
 "" Lua
 ""
+
+" Compe (autocompletion, diagnostics, etc.)
 luafile ~/.config/nvim/plugin/_compe.lua
+
+" Language Servers
 luafile ~/.config/nvim/plugin/lsp/_python.lua
 luafile ~/.config/nvim/plugin/lsp/_bash.lua
 
@@ -57,7 +61,7 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 
-augroup Edits
+augroup CodeQuality
     autocmd!
     autocmd BufWritePre * :call TrimWhitespace()
 augroup END

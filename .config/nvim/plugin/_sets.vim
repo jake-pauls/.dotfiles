@@ -39,3 +39,4 @@ set hidden
 set noerrorbells
 set signcolumn=yes
 set cmdheight=2
+set conceallevel=1
