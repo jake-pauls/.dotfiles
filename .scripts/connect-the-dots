@@ -87,6 +87,8 @@ pacman=(
     "fd"
     "ranger"
     "pcmanfm"
+    "zathura"
+    "zathura-pdf"
     "discord"
     "networkmanager"
     "alsa-utils"
@@ -113,6 +115,15 @@ yay=(
 # Installation
 sudo pacman -S ${pacman[@]}
 yay -S ${yay[@]}
+
+############
+## Docker ##
+############
+sudo pacman -S docker
+
+# Optional: Add 'docker' to user wheel group
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 
 echo "Successfully connected the dots."
 echo "Please reboot! Otherwise, happy hacking!"

@@ -20,6 +20,7 @@
 - **File Managers**
   - [pcmanfm](https://wiki.archlinux.org/title/PCManFM) (GUI)
   - [ranger](https://github.com/ranger/ranger) (CLI)
+- **Document Reader** - [zathura](https://pwmt.org/projects/zathura/)
 - **CLI Tools (that are currently changing my life)**
   - [bat](https://github.com/sharkdp/bat)
   - [ripgrep](https://github.com/BurntSushi/ripgrep)
