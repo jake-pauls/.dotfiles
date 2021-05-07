@@ -50,7 +50,7 @@ alias cat="bat"
 
 # Shells (jic)
 alias bashitup="sudo chsh -s /bin/bash && echo 'Please restart to enter bash!'"
-alias startfishing="sudo chsh -s /bin/fish && echo 'Please restart to enter fish!'"
+alias gofishing="sudo chsh -s /bin/fish && echo 'Please restart to enter fish!'"
 
 # Navigation
 alias drive="cd / && cd /media/Storage/FileStorage"

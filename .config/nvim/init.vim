@@ -47,6 +47,8 @@ let mapleader = " "
 luafile ~/.config/nvim/plugin/_compe.lua
 
 " Language Servers
+luafile ~/.config/nvim/plugin/lsp/_ts.lua
+luafile ~/.config/nvim/plugin/lsp/_go.lua
 luafile ~/.config/nvim/plugin/lsp/_python.lua
 luafile ~/.config/nvim/plugin/lsp/_bash.lua
 
