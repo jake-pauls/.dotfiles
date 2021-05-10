@@ -10,6 +10,7 @@ set smartindent
 set nowrap
 
 " Line Numbers
+set number
 set relativenumber
 set nu
 
@@ -39,4 +40,3 @@ set hidden
 set noerrorbells
 set signcolumn=yes
 set cmdheight=2
-set conceallevel=1

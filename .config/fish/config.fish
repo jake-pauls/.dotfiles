@@ -48,10 +48,6 @@ alias yayup='yay -Sua'          # Update AUR
 # Utils
 alias cat="bat"
 
-# Shells (jic)
-alias bashitup="sudo chsh -s /bin/bash && echo 'Please restart to enter bash!'"
-alias gofishing="sudo chsh -s /bin/fish && echo 'Please restart to enter fish!'"
-
 # Navigation
 alias drive="cd / && cd /media/Storage/FileStorage"
 alias projects="cd / && cd /media/Storage/FileStorage/Projects"
