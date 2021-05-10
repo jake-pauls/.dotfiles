@@ -54,7 +54,7 @@
     family: JetBrains Mono Nerd Font
     style: Bold Italic
 
-  size: 12.0
+  size: 13.0
 
   offset:
     x: 0
@@ -167,7 +167,7 @@
   blink_interval: 500
 
  shell:
-  program: /bin/fish
+  program: /bin/zsh
 
  mouse:
   double_click: { threshold: 300 }

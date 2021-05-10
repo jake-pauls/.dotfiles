@@ -4,6 +4,7 @@
 # https://github.com/jacob-pauls
 
 # Connects the dots...
+# An opinionated installation for a bunch of my configs...
 # Assumptions: Clean Arch install with git and networking configured
 # Feel free to pull this repo using https, ssh configuration is one of the core install steps
 
@@ -79,7 +80,7 @@ pacman=(
     "dmenu"
     "alacritty"
     "xterm"
-    "fish"
+    "zsh"
     "vim"
     "neovim"
     "ripgrep"
@@ -104,7 +105,6 @@ pacman=(
 )
 
 yay=(
-    "fisher"
     "starship"
     "nerd-fonts-complete"
     "qogir-gtk-theme"

@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # ENV
+export TERM="xterm-256color"
 export EDITOR="nvim"
 export DOTFILES="$HOME/.dotfiles"
 export TERMINAL="alacritty"
