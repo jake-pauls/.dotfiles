@@ -114,7 +114,7 @@ function theme.at_screen_connect(s)
         },
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            s.mytasklist,
+            --s.mytasklist,
             wibox.layout.margin(wibox.widget.systray(), 5, 5, 5, 5),
        },
 

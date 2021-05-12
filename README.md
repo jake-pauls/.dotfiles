@@ -12,7 +12,7 @@
 - **Terminal** - [Alacritty](https://github.com/alacritty/alacritty)
 - **Shells**
   - [bash](https://www.gnu.org/software/bash/)
-  - [fish](https://fishshell.com/) (main)
+  - [zsh](https://www.zsh.org/)
 - **Shell Prompt** - [Starship](https://starship.rs/)
 - **Package Managers**
   - [pacman](https://wiki.archlinux.org/title/pacman) (Arch Base Repositories)

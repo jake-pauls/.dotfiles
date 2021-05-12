@@ -72,6 +72,7 @@ pacman=(
     "nvidia"
     "xorg"
     "xorg-xinit"
+    "xclip"
     "neofetch"
     "firefox"
     "picom"
