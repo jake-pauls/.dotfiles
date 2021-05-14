@@ -23,6 +23,7 @@ dotfiles=(
     ".config/alacritty"
     ".config/polybar"
     ".config/picom"
+    ".config/ranger"
 )
 
 if [ ! -d "$HOME/.config" ]
