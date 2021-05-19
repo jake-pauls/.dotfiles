@@ -23,9 +23,9 @@ alias rm="rm -i"
 
 # Arch
 alias pacman="sudo pacman"
-alias pacgod='yay -Syu'         # Update Standard and AUR Packages
-alias pacup='sudo pacman -Syyu' # Standard Package Update
-alias yayup='yay -Sua'          # Update AUR
+alias pacgod="yay -Syu"                     # Update Standard and AUR Packages
+alias pacup="sudo pacman -Syyu"             # Standard Package Update
+alias yayup="yay -Sua"                      # Update AUR
 
 # Colorize ls output
 alias ls='ls --color=auto'

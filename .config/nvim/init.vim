@@ -35,6 +35,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
 
+" C/C++ Syntax Highlighting
+Plug 'bfrg/vim-cpp-modern'
+
 call plug#end()
 
 let mapleader = " "
@@ -47,6 +50,7 @@ let mapleader = " "
 luafile ~/.config/nvim/plugin/_compe.lua
 
 " Language Servers
+luafile ~/.config/nvim/plugin/lsp/_clangd.lua
 luafile ~/.config/nvim/plugin/lsp/_ts.lua
 luafile ~/.config/nvim/plugin/lsp/_go.lua
 luafile ~/.config/nvim/plugin/lsp/_python.lua

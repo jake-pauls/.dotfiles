@@ -7,6 +7,7 @@ export EDITOR="nvim"
 export DOTFILES="$HOME/.dotfiles"
 export TERMINAL="alacritty"
 export CC="gcc"
+export CCX="clang++"
 export GOPATH="$HOME/.local/go"
 export GOBIN="$HOME/.local/go/bin"
 

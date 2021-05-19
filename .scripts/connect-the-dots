@@ -101,6 +101,7 @@ pacman=(
     "lxappearance"
     "nodejs"
     "npm"
+    "clang"
     "scrot"
     "sxiv"
 )

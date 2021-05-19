@@ -3,7 +3,7 @@ let g:netrw_liststyle = 3
 
 " System clipboard remaps
 func! ClipboardYank()
-    call system('xclip -i -selection cliboard', @@)
+    call system('xclip -i -selection clipboard', @@)
 endfun
 func! ClipboardPaste()
     let @@ = system('xclip -o -selection clipboard')
