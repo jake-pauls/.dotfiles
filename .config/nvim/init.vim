@@ -28,12 +28,18 @@ Plug 'kyazdani42/nvim-tree.lua'
 " Statusline
 Plug 'itchyny/lightline.vim'
 
+" Tabline
+Plug 'romgrk/barbar.nvim'
+
 " Git
 Plug 'tpope/vim-fugitive'
 
+" Commenting
+Plug 'tpope/vim-commentary'
+
 " Theming
-Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
+Plug 'arcticicestudio/nord-vim'
 
 " C/C++ Syntax Highlighting
 Plug 'bfrg/vim-cpp-modern'
