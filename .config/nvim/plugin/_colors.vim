@@ -7,7 +7,7 @@ fun! WeDoItForTheMakers()
     endif
 
     set background=dark
-    colorscheme nord
+    colorscheme doom-one
 
     highlight Normal guibg=none
     highlight LineNr guifg=#5eacd3

@@ -19,6 +19,7 @@ Plug 'nvim-treesitter/playground'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
+Plug 'folke/lsp-colors.nvim'
 Plug 'hrsh7th/nvim-compe'
 
 " Tree
@@ -39,7 +40,7 @@ Plug 'tpope/vim-commentary'
 
 " Theming
 Plug 'joshdick/onedark.vim'
-Plug 'arcticicestudio/nord-vim'
+Plug 'romgrk/doom-one.vim'
 
 " C/C++ Syntax Highlighting
 Plug 'bfrg/vim-cpp-modern'

@@ -18,4 +18,4 @@ nnoremap <silent><A-8> :BufferGoto 8<CR>
 nnoremap <silent><A-9> :BufferLast<CR>
 
 " Close tab
-nnoremap <silent><A-c> :BufferClose<CR>
+nnoremap <silent><A-q> :BufferClose<CR>
