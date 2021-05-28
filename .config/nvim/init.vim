@@ -19,7 +19,6 @@ Plug 'nvim-treesitter/playground'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
-Plug 'folke/lsp-colors.nvim'
 Plug 'hrsh7th/nvim-compe'
 
 " Tree

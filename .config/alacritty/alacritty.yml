@@ -142,13 +142,7 @@
   triple_click: { threshold: 300 }
   hide_when_typing: true
 
-  url:
-    launcher:
-      program: firefox
-      args: []
-    modifiers: None
-
- key_bindings:
+  key_bindings:
   - { key: K,              mods: Alt,                             action: ScrollLineUp     }
   - { key: J,              mods: Alt,                             action: ScrollLineDown   }
   - { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }

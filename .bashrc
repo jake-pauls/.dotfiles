@@ -14,5 +14,11 @@ alias ls='ls --color=auto'
 #    PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 #fi
 
+# Launch fish (interactively) on boot
+if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]
+then
+    exec fish
+fi
+
 # Uncomment to launch the starship prompt
 eval "$(starship init bash)"
