@@ -34,6 +34,9 @@ Plug 'romgrk/barbar.nvim'
 " Git
 Plug 'tpope/vim-fugitive'
 
+" Discord
+Plug 'andweeb/presence.nvim'
+
 " Commenting
 Plug 'tpope/vim-commentary'
 
@@ -43,6 +46,12 @@ Plug 'romgrk/doom-one.vim'
 
 " C/C++ Syntax Highlighting
 Plug 'bfrg/vim-cpp-modern'
+
+" CMake
+Plug 'cdelledonne/vim-cmake'
+
+" Improves performance for neovim CursorHold autocmd events
+Plug 'antoinemadec/FixCursorHold.nvim'
 
 call plug#end()
 

@@ -135,7 +135,7 @@
   blink_interval: 500
 
  shell:
-  program: /bin/zsh
+  program: /bin/bash
 
  mouse:
   double_click: { threshold: 300 }
