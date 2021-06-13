@@ -55,7 +55,7 @@ disabled = true
 description = "Version for npm in the working directory"
 command = "npm --version"
 files = ["package-lock.json"]
-symbol = "🐸 v "
+symbol = "🐸 v"
 style = "bold green"
 format = "[$symbol($output )]($style)"
 
@@ -63,6 +63,6 @@ format = "[$symbol($output )]($style)"
 description = "Version for yarn in the working directory"
 command = "yarn --version"
 files = ["yarn.lock"]
-symbol = "🐱 v "
+symbol = "🐱 v"
 style = "bold blue"
 format = "[$symbol($output )]($style)"

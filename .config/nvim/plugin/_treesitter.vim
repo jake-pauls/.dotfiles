@@ -15,6 +15,7 @@ lua <<EOF
             "javascript",
             "typescript",
             "tsx",
+            "vue",
             "graphql",
             "toml",
             "yaml",

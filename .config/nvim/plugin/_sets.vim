@@ -2,26 +2,41 @@
 "" General Sets
 ""
 
-" Tabbing and Indentation
-set tabstop=4 softtabstop=4
+" Tabbing
+set tabstop=8
+set softtabstop=4
 set shiftwidth=4
 set expandtab
-set smartindent
+
+" Do not wrap text when off screen
 set nowrap
 
-" Line Numbers
+" Match language syntax when indenting
+set autoindent
+set smartindent
+
+" C-like indentation
+set cindent
+
+" Intuitive backspace
+set backspace=indent,eol,start
+
+" Line numbers relative to current line
 set number
 set relativenumber
-set nu
 
-" History
+" Disable swap files
 set noswapfile
 set nobackup
+
+" Init undo directory
 set undodir=~/.vim/undodir
 set undofile
 
-" Navigation
+" Always keep an 8 line padding around cursor before scrolling
 set scrolloff=8
+
+" Search and highlight while typing
 set nohlsearch
 set incsearch
 
@@ -33,7 +48,6 @@ set termguicolors
 " Misc.
 set encoding=utf8
 set exrc
-set guicursor=
 set noshowmode
 set completeopt=menuone,noinsert,noselect
 set hidden
