@@ -9,7 +9,7 @@ fun! WeDoItForTheMakers()
     colorscheme srcery
 
     highlight Normal guibg=none
-    highlight LineNr guifg=#2c78bf
+    highlight LineNr guifg=#918175
     hi TelescopeBorder guifg=#5eacd
 endfun
 call WeDoItForTheMakers()
