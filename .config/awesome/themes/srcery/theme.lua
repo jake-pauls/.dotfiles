@@ -4,8 +4,8 @@
  https://jacobpauls.dev
  https://github.com/jacob-pauls
 
- onedark
- a subtle onedark theme for awesome
+ srcery
+ a subtle srcery theme for awesome
  inspired and templated by https://github.com/lcpz/awesome-copycats
 
 --]]
@@ -22,24 +22,27 @@ local my_table  = awful.util.table or gears.table
 local theme     = {}
 
 -- Colors and Fonts
-theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/onedark"
+theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/srcery"
 theme.font                                      = "Roboto 6"
 
-theme.menu_bg_normal                            = "#1e2127"
-theme.menu_bg_focus                             = "#ABB2Bf"
-theme.bg_normal                                 = "#1e2127"
-theme.bg_focus                                  = "#6e7a91"
+-- Dark Colors
+theme.menu_bg_normal                            = "#1c1b19"
+theme.border_normal                             = "#1c1b19"
+theme.bg_normal                                 = "#1c1b19"
+theme.bg_urgent                                 = "#1c1b19"
 
-theme.bg_urgent                                 = "#000000"
-theme.fg_normal                                 = "#ABB2Bf"
-theme.fg_focus                                  = "#ABB2Bf"
-theme.fg_urgent                                 = "#0c1b2b"
-theme.fg_minimize                               = "#ffffff"
-theme.border_normal                             = "#1e2127"
-theme.border_focus                              = "#ABB2Bf"
-theme.border_marked                             = "#61afef"
-theme.menu_fg_normal                            = "#ABB2Bf"
-theme.menu_fg_focus                             = "#ABB2Bf"
+-- Light Colors
+theme.menu_bg_focus                             = "#fce8c3"
+theme.fg_normal                                 = "#fce8c3"
+theme.fg_focus                                  = "#fce8c3"
+theme.border_focus                              = "#fce8c3"
+theme.menu_fg_normal                            = "#fce8c3"
+theme.menu_fg_focus                             = "#fce8c3"
+theme.fg_minimize                               = "#fce8c3"
+
+-- Matches Arch Launcher Color
+theme.bg_focus                                  = "#918175"
+theme.fg_urgent                                 = "#918175"
 
 -- Icons
 theme.arch_launcher                             = theme.confdir .. "/icons/arch.png"

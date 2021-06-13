@@ -29,7 +29,7 @@ set relativenumber
 set noswapfile
 set nobackup
 
-" Init undo directory
+" Initialize undo directory
 set undodir=~/.vim/undodir
 set undofile
 
@@ -40,9 +40,9 @@ set scrolloff=8
 set nohlsearch
 set incsearch
 
-" GUI
+" GUI Fonts and Colors
 set guicursor=
-set guifont=JetBrains\ Mono\ Nerd\ Font\ 13
+set guifont=Iosevka\ Nerd\ Font\ 12
 set termguicolors
 
 " Misc.

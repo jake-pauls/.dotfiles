@@ -37,9 +37,12 @@ Plug 'tpope/vim-fugitive'
 " Commenting
 Plug 'tpope/vim-commentary'
 
+" Indenting
+Plug 'Yggdroot/indentLine'
+
 " Theming
 Plug 'joshdick/onedark.vim'
-Plug 'romgrk/doom-one.vim'
+Plug 'srcery-colors/srcery-vim'
 
 " C/C++ Syntax Highlighting
 Plug 'bfrg/vim-cpp-modern'
