@@ -61,7 +61,7 @@ end
 run_once({ "unclutter -root" }) -- comma-separated entries
 
 -- Themes
-local chosen_theme = "srcery"
+local chosen_theme = "general"
 
 -- Constants
 local modkey       = "Mod4"

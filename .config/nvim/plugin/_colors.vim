@@ -6,10 +6,10 @@ fun! WeDoItForTheMakers()
     endif
 
     set background=dark
-    colorscheme srcery
+    colorscheme nord
 
-    highlight Normal guibg=none
-    highlight LineNr guifg=#918175
+   " highlight Normal guibg=none
+   " highlight LineNr guifg=#918175
     hi TelescopeBorder guifg=#5eacd
 endfun
 call WeDoItForTheMakers()

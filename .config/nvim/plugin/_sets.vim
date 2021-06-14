@@ -42,7 +42,7 @@ set incsearch
 
 " GUI Fonts and Colors
 set guicursor=
-set guifont=Iosevka\ Nerd\ Font\ 12
+set guifont=JetBrains\ Mono\ Nerd\ Font\ 11
 set termguicolors
 
 " Misc.

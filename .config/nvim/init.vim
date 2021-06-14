@@ -41,7 +41,7 @@ Plug 'tpope/vim-commentary'
 Plug 'Yggdroot/indentLine'
 
 " Theming
-Plug 'joshdick/onedark.vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'srcery-colors/srcery-vim'
 
 " C/C++ Syntax Highlighting
