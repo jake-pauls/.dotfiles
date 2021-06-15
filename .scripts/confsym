@@ -1,5 +1,6 @@
 #!/bin/bash
 # Removes existing files in home directory and symlinks files from .dotfiles repo
+# Be mindful executing this, as its currently opinionated for a clean ArchLinux installation
 
 # Variables
 dotfiles_path=~/.dotfiles

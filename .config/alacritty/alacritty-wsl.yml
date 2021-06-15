@@ -2,7 +2,7 @@
 # https://jakepauls.dev
 # https://github.com/jake-pauls
 
-# Alacritty Configuration (WSL)
+# WSL Configuration
 
  env:
   TERM: xterm-256color

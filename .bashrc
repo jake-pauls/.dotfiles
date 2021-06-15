@@ -5,14 +5,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+# Disable ls highlighting, use automatic colors otherwise
+LS_COLORS=$LS_COLORS:'ow=1;34:' ; export LS_COLORS
 
-# Default Gentoo Prompt
-#if [[ ${EUID} == 0 ]] ; then
-#    PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
-#else
-#    PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
-#fi
+alias ls='ls --color=auto'
 
 # Launch fish (interactively) on boot
 if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]

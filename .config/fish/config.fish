@@ -52,6 +52,9 @@ alias cat="bat"
 alias drive="cd / && cd /media/Storage/FileStorage"
 alias projects="cd / && cd /media/Storage/FileStorage/Projects"
 
+alias wsl-drive="cd / && cd /mnt/e/FileStorage"
+alias wsl-projects="cd / && cd /mnt/e/FileStorage/Projects"
+
 ##
 ## Starship
 ##
