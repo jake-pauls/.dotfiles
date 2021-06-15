@@ -1,6 +1,6 @@
 # Jake Pauls
-# https://jacobpauls.dev
-# https://github.com/jacob-pauls
+# https://jakepauls.dev
+# https://github.com/jake-pauls
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

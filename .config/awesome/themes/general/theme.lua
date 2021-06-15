@@ -1,8 +1,8 @@
 --[[
 
  Jake Pauls
- https://jacobpauls.dev
- https://github.com/jacob-pauls
+ https://jakepauls.dev
+ https://github.com/jake-pauls
 
  a subtle dark bar theme for awesome
  inspired and templated by https://github.com/lcpz/awesome-copycats

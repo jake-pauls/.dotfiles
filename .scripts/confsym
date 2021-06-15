@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Jake Pauls
+# https://jakepauls.dev
+# https://github.com/jake-pauls
+
 # Removes existing files in home directory and symlinks files from .dotfiles repo
 # Be mindful executing this, as its currently opinionated for a clean ArchLinux installation
 
