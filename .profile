@@ -16,3 +16,4 @@ export RANGER_LOAD_DEFAULT_RC=FALSE
 # PATH
 export PATH="$HOME/.dotfiles/.scripts:$PATH"
 export PATH="$HOME/.local/go/bin:$PATH"
+. "$HOME/.cargo/env"

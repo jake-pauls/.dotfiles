@@ -54,7 +54,7 @@
     family: JetBrains Mono Nerd Font
     style: Bold Italic
 
-  size: 11.0
+  size: 13.0
 
   offset:
     x: 0
@@ -152,7 +152,7 @@
 
  colors: *nord
 
- background_opacity: 1
+ background_opacity: 0.75
 
  selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

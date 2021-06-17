@@ -18,3 +18,4 @@ fi
 
 # Uncomment to launch the starship prompt
 eval "$(starship init bash)"
+. "$HOME/.cargo/env"

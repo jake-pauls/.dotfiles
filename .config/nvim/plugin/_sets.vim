@@ -41,9 +41,9 @@ set nohlsearch
 set incsearch
 
 " GUI Fonts and Colors
+set termguicolors
 set guicursor=
 set guifont=JetBrains\ Mono\ Nerd\ Font\ 11
-set termguicolors
 
 " Misc.
 set encoding=utf8

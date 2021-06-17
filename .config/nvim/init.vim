@@ -21,9 +21,10 @@ Plug 'nvim-treesitter/playground'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 
-" Tree
-Plug 'kyazdani42/nvim-web-devicons'
+" Tree + Icons
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 " Statusline
 Plug 'itchyny/lightline.vim'
@@ -37,12 +38,15 @@ Plug 'tpope/vim-fugitive'
 " Commenting
 Plug 'tpope/vim-commentary'
 
-" Indenting
+" Characters for Indent Recognition
 Plug 'Yggdroot/indentLine'
 
 " Theming
 Plug 'arcticicestudio/nord-vim'
 Plug 'srcery-colors/srcery-vim'
+
+" Transparency
+Plug 'miyakogi/seiya.vim'
 
 " C/C++ Syntax Highlighting
 Plug 'bfrg/vim-cpp-modern'
@@ -51,6 +55,11 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'cdelledonne/vim-cmake'
 " Improves performance for neovim CursorHold autocmd events
 Plug 'antoinemadec/FixCursorHold.nvim'
+
+" Prettier
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 call plug#end()
 

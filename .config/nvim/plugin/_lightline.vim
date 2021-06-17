@@ -1,12 +1,30 @@
+" mode_map overrides the default mode names
 let g:lightline = {
-       \ 'colorscheme': 'nord',
-       \ 'active': {
-       \   'left': [ [ 'mode', 'paste' ],
-       \             [ 'gitbranch', 'readonly', 'filename', 'modified'] ],
-       \   'right': [ [ 'lineinfo' ],
-       \              [ 'filetype', 'charvaluehex' ] ]
-       \ },
-       \ 'component_function': {
-       \   'gitbranch': 'fugitive#head',
-       \ },
+           \ 'colorscheme': 'nord',
+           \ 'active': {
+           \   'left': [ [ 'mode', 'paste' ],
+           \             [ 'gitbranch', 'readonly', 'filename', 'modified'] ],
+           \   'right': [ [ 'lineinfo' ], [ 'percent' ], [ 'filetype' ]]
+           \ },
+           \ 'component_function': {
+           \   'gitbranch': 'fugitive#head',
+           \   'filetype': 'FileType',
+           \   'fileformat': 'FileFormat',
+           \ },
+           \ 'mode_map': {
+           \     'V' : 'VISUAL',
+           \     "\<C-v>": 'VISUAL',
+           \     'c' : 'NORMAL',
+           \     'S' : 'SELECT',
+           \     "\<C-s>": 'SELECT',
+           \ },
        \ }
+
+function! FileType()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! FileFormat()
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
+
