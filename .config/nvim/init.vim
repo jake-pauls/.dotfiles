@@ -78,6 +78,7 @@ luafile ~/.config/nvim/plugin/lsp/_ts.lua
 luafile ~/.config/nvim/plugin/lsp/_go.lua
 luafile ~/.config/nvim/plugin/lsp/_python.lua
 luafile ~/.config/nvim/plugin/lsp/_bash.lua
+luafile ~/.config/nvim/plugin/lsp/_rust.lua
 
 ""
 "" Utils

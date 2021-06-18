@@ -3,26 +3,22 @@
 ""
 
 " Tabbing
-set tabstop=8
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+
+" For indentline plug
 set expandtab
+set smartindent
 
 " Do not wrap text when off screen
 set nowrap
-
-" Match language syntax when indenting
-set autoindent
-set smartindent
-
-" C-like indentation
-set cindent
 
 " Intuitive backspace
 set backspace=indent,eol,start
 
 " Line numbers relative to current line
 set number
+set numberwidth=2
 set relativenumber
 
 " Disable swap files
@@ -53,4 +49,5 @@ set completeopt=menuone,noinsert,noselect
 set hidden
 set noerrorbells
 set signcolumn=yes
-set cmdheight=2
+set conceallevel=1
+set cmdheight=1

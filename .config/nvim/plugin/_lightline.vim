@@ -20,11 +20,10 @@ let g:lightline = {
            \ },
        \ }
 
-function! FileType()
+fun! FileType()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-endfunction
+endfun
 
-function! FileFormat()
+fun! FileFormat()
   return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
-endfunction
-
+endfun
