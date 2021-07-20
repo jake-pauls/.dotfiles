@@ -56,6 +56,9 @@ Plug 'cdelledonne/vim-cmake'
 " Improves performance for neovim CursorHold autocmd events
 Plug 'antoinemadec/FixCursorHold.nvim'
 
+" GLSL
+Plug 'tikhomirov/vim-glsl'
+
 " Prettier
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
