@@ -6,6 +6,8 @@
 Xcursor.theme:   Qogir-dark
 Xcursor.size:    16
 
+Xft.dpi: 144
+
 ! SXIV
 Sxiv.foreground: #baa67f
 Sxiv.background: #1c1b19

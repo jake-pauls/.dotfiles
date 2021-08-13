@@ -94,6 +94,8 @@ display=(
 environment=(
     "dmenu"
     "awesome"
+    "budgie-desktop"
+    "gnome"
 )
 
 terminal=(

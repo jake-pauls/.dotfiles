@@ -33,7 +33,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'romgrk/barbar.nvim'
 
 " Git
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 
 " Commenting
 Plug 'tpope/vim-commentary'

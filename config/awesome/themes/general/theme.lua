@@ -94,8 +94,9 @@ function theme.at_screen_connect(s)
     local mylauncher = awful.widget.button({ image = theme.arch_launcher })
     local mylaunchermenu = awful.menu({
         items = {
-            { "Shutdown", "poweroff" },
+            { "Log Out", "gnome-session-quit --logout --no-prompt"},
             { "Restart", "reboot" },
+            { "Shutdown", "poweroff" },
         }
     })
     mylauncher:connect_signal("button::press", function() mylaunchermenu:toggle() end)
@@ -117,7 +118,7 @@ function theme.at_screen_connect(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             --s.mytasklist,
-            wibox.layout.margin(wibox.widget.systray(), 5, 5, 5, 5),
+            wibox.container.margin(wibox.widget.systray(), 5, 5, 5, 5),
        },
 
     }

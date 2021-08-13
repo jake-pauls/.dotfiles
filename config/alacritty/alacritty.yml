@@ -19,7 +19,7 @@
     y: 4
 
   dynamic_padding: true
-  decorations: none
+  decorations: Full
 
   startup_mode: Windowed
 
