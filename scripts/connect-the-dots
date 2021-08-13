@@ -131,6 +131,9 @@ yay=(
 sudo pacman -S ${lib[@]} ${file[@]} ${display[@]} ${environment[@]} ${terminal[@]} ${cli[@]} ${misc[@]}
 yay -S ${yay[@]}
 
+# Use dash as the default shell
+sudo chsh -s /usr/bin/dash
+
 ############
 ## Docker ##
 ############

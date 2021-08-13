@@ -37,15 +37,16 @@ ln -sf $dpath/config/starship/starship.toml ~/.config/starship.toml
 
 # .config symlinks
 dotfiles=(
-    "config/nvim"
-    "config/zathura"
-    "config/git"
-    "config/fish"
-    "config/nitrogen"
-    "config/awesome"
     "config/alacritty"
-    "config/polybar"
+    "config/awesome"
+    "config/fish"
+    "config/git"
+    "config/nitrogen"
+    "config/nvim"
     "config/picom"
+    "config/polybar"
+    "config/ranger"
+    "config/zathura"
 )
 
 if [ ! -d "$HOME/.config" ]
