@@ -1,18 +1,17 @@
-#!/bin/bash
+#!/bin/sh
 
 # Jake Pauls
 # https://jakepauls.dev
 # https://github.com/jake-pauls
 
 # Connects the dots...
-# An opinionated installation for a bunch of my configs...
+# Quick package installation procedure
 # Assumptions: Clean Arch install with git and networking configured
-# Feel free to pull this repo using https, ssh configuration is one of the core install steps
 
 ###############
 ## Variables ##
 ###############
-dotfiles_path=~/.dotfiles
+dpath=~/.dotfiles
 
 cd ~ && echo "This install script assumes git is installed within a basic arch installation\n"
 
@@ -41,7 +40,7 @@ echo "Press [ENTER] to continue..."
 read enter
 
 # Update origin after SSH configuration
-cd ~/.dotfiles
+cd $dpath
 git remote set-url origin git@github.com:jacob-pauls/.dotfiles.git
 
 ###############
@@ -49,7 +48,7 @@ git remote set-url origin git@github.com:jacob-pauls/.dotfiles.git
 ###############
 
 # Symlink dotfiles
-cd ~/.dotfiles/.scripts
+cd $dpath/.scripts
 confsym
 
 ###############
@@ -68,65 +67,81 @@ cd ~
 ## Packages ##
 ##############
 
-# Replace "nvidia" with required graphics driver
-pacman=(
-    "nvidia"
-    "xorg"
-    "xorg-xinit"
-    "xclip"
-    "neofetch"
-    "firefox"
-    "picom"
-    "nitrogen"
-    "awesome"
-    "dmenu"
-    "alacritty"
-    "xterm"
-    "zsh"
-    "vim"
-    "neovim"
-    "ripgrep"
-    "bat"
-    "fd"
+lib=(
+    "nodejs"
+    "npm"
+    "clang"
+)
+
+file=(
     "ranger"
     "pcmanfm"
     "zathura"
     "zathura-pdf"
-    "discord"
-    "networkmanager"
-    "alsa-utils"
-    "pulseaudio"
-    "pulseaudio-alsa"
-    "systemctl"
-    "unzip"
-    "lxappearance"
-    "nodejs"
-    "npm"
-    "clang"
-    "scrot"
     "sxiv"
 )
 
+# Replace "nvidia" with required graphics driver
+display=(
+    "nvidia"
+    "xorg"
+    "xorg-xinit"
+    "picom"
+    "nitrogen"
+    "lxappearance"
+)
+
+environment=(
+    "dmenu"
+    "awesome"
+)
+
+terminal=(
+    "xterm"
+    "alacritty"
+    "dash"
+    "zsh"
+)
+
+cli=(
+    "vim"
+    "ripgrep"
+    "bat"
+    "fd"
+    "scrot"
+    "xclip"
+    "unzip"
+)
+
+misc=(
+    "firefox"
+    "discord"
+    "networkmanager"
+    "systemctl"
+)
+
 yay=(
-    "starship"
+    "neovim-nightly-bin"
     "nerd-fonts-complete"
-    "qogir-gtk-theme"
-    "qogir-icon-theme"
+    "ttf-ms-fonts"
 )
 
 
 # Installation
-sudo pacman -S ${pacman[@]}
+sudo pacman -S ${lib[@]} ${file[@]} ${display[@]} ${environment[@]} ${terminal[@]} ${cli[@]} ${misc[@]}
 yay -S ${yay[@]}
 
 ############
 ## Docker ##
 ############
-sudo pacman -S docker
-
-# Optional: Add 'docker' to user wheel group
-sudo systemctl enable docker.service
-sudo systemctl enable containerd.service
+while true; do
+  read -p "Would you like to install and configure Docker? (uses systemd)" yn
+  case $yn in
+    [Yy]* ) sudo pacman -S docker; sudo systemctl enable docker.service; sudo systemctl enable docker.containerd.service; break;;
+    [Nn]* ) exit;;
+    * ) echo "Please answer yes (Y/y) or no (N/n).";;
+  esac
+done
 
 echo "Successfully connected the dots."
 echo "Please reboot! Otherwise, happy hacking!"

@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# Jake Pauls
+# https://jakepauls.dev
+# https://github.com/jake-pauls
+
+# Removes existing files in home directory and symlinks files from .dotfiles repo
+# Be mindful executing this, as its currently opinionated for a clean ArchLinux installation
+
+# Variables
+dpath=~/.dotfiles
+
+# dotfiles to symlink
+echo "Loading configured dotfiles..."
+
+# Manually configured symlinks
+rm ~/.profile
+ln -sf $dpath/misc/.profile ~/.profile
+
+rm ~/.Xresources
+ln -sf $dpath/misc/.Xresources ~/.Xresources
+
+rm ~/.xinitrc
+ln -sf $dpath/misc/.xinitrc ~/.xinitrc
+
+rm ~/.bashrc
+ln -sf $dpath/config/bash/.bashrc ~/.bashrc
+
+rm ~/.zshrc
+ln -sf $dpath/config/zsh/.zshrc ~/.zshrc
+
+rm ~/.vimrc
+ln -sf $dpath/config/vim/.vimrc ~/.vimrc
+
+rm ~/.config/starship.toml
+ln -sf $dpath/config/starship/starship.toml ~/.config/starship.toml
+
+# .config symlinks
+dotfiles=(
+    "config/nvim"
+    "config/zathura"
+    "config/git"
+    "config/fish"
+    "config/nitrogen"
+    "config/awesome"
+    "config/alacritty"
+    "config/polybar"
+    "config/picom"
+)
+
+if [ ! -d "$HOME/.config" ]
+then
+	echo "Creating .config directory in $HOME"
+	mkdir ~/.config
+fi
+
+# Remove dotfiles in home, symlink to .dotfiles repo
+echo "Symlinking dotfiles to \$HOME"
+for dotfile in "${dotfiles[@]}"; do
+    echo "Removing ~/.${dotfile}"
+	rm -rf ~/.$dotfile
+    echo "Creating symlink for ~/.${dotfile}"
+	ln -sf $dpath/$dotfile ~/.$dotfile
+done
