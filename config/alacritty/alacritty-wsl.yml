@@ -4,10 +4,10 @@
 
 # WSL Configuration
 
- env:
+env:
   TERM: xterm-256color
 
- window:
+window:
   dimensions:
     columns: 0
     lines: 0
@@ -35,11 +35,11 @@
 
   gtk_theme_variant: None
 
- scrolling:
+scrolling:
   history: 10000
   multiplier: 2
 
- font:
+font:
   normal:
     family: JetBrains Mono Nerd Font
     style: Regular
@@ -66,101 +66,96 @@
     x: 0
     y: 0
 
- # If `true`, bold text is drawn using the bright color variants.
- draw_bold_text_with_bright_colors: false
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: false
 
- schemes:
-    default: &default
-     primary:
-      background: '#1d1f21'
-      foreground: '#c5c8c6'
+schemes:
+  default: &default
+    primary:
+      background: "#1d1f21"
+      foreground: "#c5c8c6"
 
-    nord: &nord
-     primary:
-       background: '#2e3440'
-       foreground: '#d8dee9'
-       dim_foreground: '#a5abb6'
-       cursor:
-         text: '#2e3440'
-         cursor: '#d8dee9'
-       vi_mode_cursor:
-         text: '#2e3440'
-         cursor: '#d8dee9'
-       selection:
-         text: CellForeground
-         background: '#4c566a'
-       search:
-         matches:
-           foreground: CellBackground
-           background: '#88c0d0'
-         bar:
-           background: '#434c5e'
-           foreground: '#d8dee9'
-     normal:
-         black: '#3b4252'
-         red: '#bf616a'
-         green: '#a3be8c'
-         yellow: '#ebcb8b'
-         blue: '#81a1c1'
-         magenta: '#b48ead'
-         cyan: '#88c0d0'
-         white: '#e5e9f0'
-     bright:
-         black: '#4c566a'
-         red: '#bf616a'
-         green: '#a3be8c'
-         yellow: '#ebcb8b'
-         blue: '#81a1c1'
-         magenta: '#b48ead'
-         cyan: '#8fbcbb'
-         white: '#eceff4'
-     dim:
-         black: '#373e4d'
-         red: '#94545d'
-         green: '#809575'
-         yellow: '#b29e75'
-         blue: '#68809a'
-         magenta: '#8c738c'
-         cyan: '#6d96a5'
-         white: '#aeb3bb'
-
-    srcery: &srcery
-     primary:
-      background: '0x1c1b19'
-      foreground: '0xbaa67f'
-
-    # Normal colors
+  nord: &nord
+    primary:
+      background: "#2e3440"
+      foreground: "#d8dee9"
+      dim_foreground: "#a5abb6"
+      cursor:
+        text: "#2e3440"
+        cursor: "#d8dee9"
+      vi_mode_cursor:
+        text: "#2e3440"
+        cursor: "#d8dee9"
+      selection:
+        text: CellForeground
+        background: "#4c566a"
+      search:
+        matches:
+          foreground: CellBackground
+          background: "#88c0d0"
+        bar:
+          background: "#434c5e"
+          foreground: "#d8dee9"
     normal:
-      black:   '0x1c1b19'
-      red:     '0xef2f27'
-      green:   '0x519f50'
-      yellow:  '0xffbb829'
-      blue:    '0x2c78bf'
-      magenta: '0xe02c6d'
-      cyan:    '0x0aaeb3'
-      white:   '0xbaa67f'
+      black: "#3b4252"
+      red: "#bf616a"
+      green: "#a3be8c"
+      yellow: "#ebcb8b"
+      blue: "#81a1c1"
+      magenta: "#b48ead"
+      cyan: "#88c0d0"
+      white: "#e5e9f0"
+    bright:
+      black: "#4c566a"
+      red: "#bf616a"
+      green: "#a3be8c"
+      yellow: "#ebcb8b"
+      blue: "#81a1c1"
+      magenta: "#b48ead"
+      cyan: "#8fbcbb"
+      white: "#eceff4"
+    dim:
+      black: "#373e4d"
+      red: "#94545d"
+      green: "#809575"
+      yellow: "#b29e75"
+      blue: "#68809a"
+      magenta: "#8c738c"
+      cyan: "#6d96a5"
+      white: "#aeb3bb"
 
-      # Bright Colors
-      bright:
-        black:   '0x918175'
-        red:     '0xf75341'
-        green:   '0x98bc37'
-        yellow:  '0xfed06e'
-        blue:    '0x68a8e4'
-        magenta: '0xff5c8f'
-        cyan:    '0x2be4d0'
-        white:   '0xfce7c3'
+  everforest_dark_hard: &everforest_dark_hard
+    primary:
+      background: "#2b3339"
+      foreground: "#d3c6aa"
+    normal:
+      black: "#4b565c"
+      red: "#e67e80"
+      green: "#a7c080"
+      yellow: "#dbbc7f"
+      blue: "#7fbbb3"
+      magenta: "#d699b6"
+      cyan: "#83c092"
+      white: "#d3c6aa"
+    bright:
+      black: "#4b565c"
+      red: "#e67e80"
+      green: "#a7c080"
+      yellow: "#dbbc7f"
+      blue: "#7fbbb3"
+      magenta: "#d699b6"
+      cyan: "#83c092"
+      white: "#d3c6aa"
 
+colors: *everforest_dark_hard
 
- colors: *nord
+background_opacity: 1
 
- background_opacity: 1
-
- selection:
+selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
   save_to_clipboard: false
 
- cursor:
+cursor:
   style:
     shape: Block
     blinking: On
@@ -170,22 +165,22 @@
   thickness: 0.15
   blink_interval: 500
 
- shell:
+shell:
   program: "C:\\Windows\\System32\\wsl.exe"
 
- mouse:
+mouse:
   double_click: { threshold: 300 }
   triple_click: { threshold: 300 }
   hide_when_typing: true
 
   key_bindings:
-  - { key: K,              mods: Alt,                             action: ScrollLineUp     }
-  - { key: J,              mods: Alt,                             action: ScrollLineDown   }
-  - { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
-  - { key: C,              mods: Control|Shift,                   action: Copy             }
-  - { key: Plus,           mods: Control,                         action: IncreaseFontSize }
-  - { key: Minus,          mods: Control,                         action: DecreaseFontSize }
+    - { key: K, mods: Alt, action: ScrollLineUp }
+    - { key: J, mods: Alt, action: ScrollLineDown }
+    - { key: V, mods: Control|Shift, mode: ~Vi, action: Paste }
+    - { key: C, mods: Control|Shift, action: Copy }
+    - { key: Plus, mods: Control, action: IncreaseFontSize }
+    - { key: Minus, mods: Control, action: DecreaseFontSize }
 
- debug:
+debug:
   persistent_logging: false
   log_level: warn

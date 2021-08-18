@@ -11,12 +11,9 @@
 dpath=~/.dotfiles
 
 # dotfiles to symlink
-echo "Loading configured dotfiles..."
+echo "[info] Loading configured dotfiles..."
 
 # Manually configured symlinks
-rm ~/.profile
-ln -sf $dpath/misc/.profile ~/.profile
-
 rm ~/.Xresources
 ln -sf $dpath/misc/.Xresources ~/.Xresources
 
@@ -35,6 +32,10 @@ ln -sf $dpath/config/vim/.vimrc ~/.vimrc
 rm ~/.config/starship.toml
 ln -sf $dpath/config/starship/starship.toml ~/.config/starship.toml
 
+# Append some sane path defaults from this .dotfiles repo only
+cat $dpath/misc/.profile > ~/.profile
+echo "[info] Appended \$PATH defaults to ~/.profile."
+
 # .config symlinks
 dotfiles=(
     "config/alacritty"
@@ -51,15 +52,17 @@ dotfiles=(
 
 if [ ! -d "$HOME/.config" ]
 then
-	echo "Creating .config directory in $HOME"
+	echo "[info] Creating .config directory in $HOME"
 	mkdir ~/.config
 fi
 
 # Remove dotfiles in home, symlink to .dotfiles repo
 echo "Symlinking dotfiles to \$HOME"
 for dotfile in "${dotfiles[@]}"; do
-    echo "Removing ~/.${dotfile}"
+    echo "[warn] Removing ~/.${dotfile}"
 	rm -rf ~/.$dotfile
-    echo "Creating symlink for ~/.${dotfile}"
+    echo "[info] Creating symlink for ~/.${dotfile}"
 	ln -sf $dpath/$dotfile ~/.$dotfile
 done
+
+echo "[info] Successfully configured symlinks. Please validate ~/.profile before refreshing your shell."

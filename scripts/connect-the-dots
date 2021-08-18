@@ -13,15 +13,15 @@
 ###############
 dpath=~/.dotfiles
 
-cd ~ && echo "This install script assumes git is installed within a basic arch installation\n"
+cd ~ && echo "[warn] This install script assumes git is installed within a basic arch installation\n"
 
-echo "Checking for system updates..."
+echo "[pacman] Checking for system updates..."
 sudo pacman -Syu
 
 #########
 ## SSH ##
 #########
-echo "Installing openssh..."
+echo "[pacman] Installing openssh..."
 sudo pacman -S openssh
 
 echo "Please enter your GitHub email address: "
@@ -31,8 +31,8 @@ ssh-keygen -t ed25519 -C $gh_email
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 
-echo "SSH key generated for this machine, in association with $gh_email"
-echo "Add this public key to your GitHub account before continuing to configure SSH on this machine"
+echo "[warn] SSH key generated for this machine, in association with $gh_email."
+echo "[warn] Add this public key to your GitHub account before continuing to configure SSH on this machine."
 
 cat ~/.ssh/id_ed25519.pub
 
@@ -54,11 +54,11 @@ confsym
 ###############
 ## yay (AUR) ##
 ###############
-echo "Installing the base-devel packages..."
+echo "[pacman] Installing the base-devel packages..."
 sudo pacman -S base-devel
 cd ~/.config
 
-echo "Cloning yay from the AUR..."
+echo "[pacman] Cloning yay from the AUR..."
 git clone https://aur.archlinux.org/yay.git
 cd yay && makepkg -si
 cd ~
@@ -94,8 +94,6 @@ display=(
 environment=(
     "dmenu"
     "awesome"
-    "budgie-desktop"
-    "gnome"
 )
 
 terminal=(
@@ -134,6 +132,7 @@ sudo pacman -S ${lib[@]} ${file[@]} ${display[@]} ${environment[@]} ${terminal[@
 yay -S ${yay[@]}
 
 # Use dash as the default shell
+echo "[info] Changing default shell to dash"
 sudo chsh -s /usr/bin/dash
 
 ############
@@ -148,5 +147,5 @@ while true; do
   esac
 done
 
-echo "Successfully connected the dots."
-echo "Please reboot! Otherwise, happy hacking!"
+echo "[info] Successfully connected the dots."
+echo "[info] Please reboot! Otherwise, happy hacking!"
