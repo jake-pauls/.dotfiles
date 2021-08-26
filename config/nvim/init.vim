@@ -21,6 +21,9 @@ Plug 'nvim-treesitter/playground'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 
+" LSP Icons
+Plug 'onsails/lspkind-nvim'
+
 " Tree + Icons
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -33,7 +36,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'romgrk/barbar.nvim'
 
 " Git
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Commenting
 Plug 'tpope/vim-commentary'
@@ -74,6 +77,9 @@ let mapleader = " "
 
 " Compe (autocompletion, diagnostics, etc.)
 luafile ~/.config/nvim/plugin/_compe.lua
+
+" LSP Icons
+luafile ~/.config/nvim/plugin/lsp/_kind.lua
 
 " Language Servers
 luafile ~/.config/nvim/plugin/lsp/_clangd.lua
