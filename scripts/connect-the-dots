@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Jake Pauls
 # https://jakepauls.dev
@@ -41,15 +41,15 @@ read enter
 
 # Update origin after SSH configuration
 cd $dpath
-git remote set-url origin git@github.com:jacob-pauls/.dotfiles.git
+git remote set-url origin git@github.com:jake-pauls/.dotfiles.git
 
 ###############
 ## .dotfiles ##
 ###############
 
 # Symlink dotfiles
-cd $dpath/.scripts
-confsym
+cd $dpath/scripts
+bash confsym
 
 ###############
 ## yay (AUR) ##
@@ -77,7 +77,6 @@ file=(
     "ranger"
     "pcmanfm"
     "zathura"
-    "zathura-pdf"
     "sxiv"
 )
 
@@ -92,7 +91,7 @@ display=(
 )
 
 environment=(
-    "dmenu"
+    "rofi"
     "awesome"
 )
 
@@ -101,6 +100,7 @@ terminal=(
     "alacritty"
     "dash"
     "zsh"
+    "starship"
 )
 
 cli=(
@@ -117,13 +117,13 @@ misc=(
     "firefox"
     "discord"
     "networkmanager"
-    "systemctl"
 )
 
 yay=(
     "neovim-nightly-bin"
     "nerd-fonts-complete"
     "ttf-ms-fonts"
+    "pfetch"
 )
 
 

@@ -13,6 +13,9 @@ dpath=~/.dotfiles
 # dotfiles to symlink
 echo "[info] Loading configured dotfiles..."
 
+# Add .config directory
+cd ~ && mkdir .config
+
 # Manually configured symlinks
 rm ~/.Xresources
 ln -sf $dpath/misc/.Xresources ~/.Xresources
