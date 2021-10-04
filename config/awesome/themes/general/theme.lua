@@ -22,7 +22,7 @@ local theme     = {}
 
 -- Colors and Fonts
 theme.confdir                                   = os.getenv("HOME") .. "/.config/awesome/themes/general"
-theme.font                                      = "Roboto 6"
+theme.font                                      = "JetBrains Mono Nerd Font 6"
 
 -- Dark Colors
 theme.menu_bg_normal                            = "#181a1b"
@@ -94,7 +94,6 @@ function theme.at_screen_connect(s)
     local mylauncher = awful.widget.button({ image = theme.arch_launcher })
     local mylaunchermenu = awful.menu({
         items = {
-            { "Log Out", "gnome-session-quit --logout --no-prompt"},
             { "Restart", "reboot" },
             { "Shutdown", "poweroff" },
         }
@@ -110,6 +109,7 @@ function theme.at_screen_connect(s)
             mylauncher,
             s.mytaglist,
             s.mypromptbox,
+            s.mytasklist,
        },
         { -- Middle widgets
             layout = wibox.layout.fixed.horizontal,
@@ -117,7 +117,6 @@ function theme.at_screen_connect(s)
         },
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            --s.mytasklist,
             wibox.container.margin(wibox.widget.systray(), 5, 5, 5, 5),
        },
 

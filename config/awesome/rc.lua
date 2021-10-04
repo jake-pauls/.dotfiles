@@ -425,13 +425,13 @@ globalkeys = mytable.join(
         end,
         {description = "mpc on/off", group = "widgets"}),
 
-    -- Run Browser
+    -- Browser (firefox)
     awful.key({ modkey }, "b", function () awful.spawn(browser) end,
               {description = "run browser", group = "jake-pauls"}),
 
-    -- Dmenu
-    awful.key({ modkey }, "p", function() awful.util.spawn("dmenu_run") end,
-              {description = "run dmenu", group = "jake-pauls"}),
+    -- Run launcher (rofi)
+    awful.key({ modkey }, "p", function() awful.util.spawn("rofi -show run") end,
+              {description = "spawn run launcher", group = "jake-pauls"}),
 
     -- Discord
     awful.key({ modkey }, "d", function() awful.util.spawn("discord") end,
@@ -607,7 +607,7 @@ awful.rules.rules = {
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
-    { rule = { class = "Firefox" },
+     { rule = { class = "firefox" },
        properties = { opacity = 1, maximized = false, floating = false } },
 }
 
