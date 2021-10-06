@@ -77,6 +77,7 @@ file=(
     "ranger"
     "pcmanfm"
     "zathura"
+    "zathura-pdf-poppler"
     "sxiv"
 )
 
@@ -116,6 +117,7 @@ cli=(
 misc=(
     "firefox"
     "discord"
+    "volumeicon"
     "networkmanager"
 )
 
