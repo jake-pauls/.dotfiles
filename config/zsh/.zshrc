@@ -44,3 +44,6 @@ alias wsl-projects="cd / && cd /mnt/e/FileStorage/Projects"
 
 # Starship Prompt
 eval "$(starship init zsh)"
+
+# Source Local Profile (comment if this is done by startx)
+source ~/.profile
