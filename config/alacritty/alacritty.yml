@@ -145,7 +145,7 @@ schemes:
       cyan: "#83c092"
       white: "#d3c6aa"
 
-colors: *everforest_dark_hard
+colors: *nord
 
 background_opacity: 0.90
 

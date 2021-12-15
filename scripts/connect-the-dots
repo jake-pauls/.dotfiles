@@ -106,6 +106,7 @@ terminal=(
 
 cli=(
     "vim"
+    "neovim"
     "ripgrep"
     "bat"
     "fd"
@@ -122,7 +123,6 @@ misc=(
 )
 
 yay=(
-    "neovim-nightly-bin"
     "nerd-fonts-complete"
     "ttf-ms-fonts"
     "pfetch"

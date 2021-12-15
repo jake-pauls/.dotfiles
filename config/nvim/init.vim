@@ -55,9 +55,9 @@ Plug 'miyakogi/seiya.vim'
 Plug 'bfrg/vim-cpp-modern'
 
 " CMake
-Plug 'cdelledonne/vim-cmake'
+" Plug 'cdelledonne/vim-cmake'
 " Improves performance for neovim CursorHold autocmd events
-Plug 'antoinemadec/FixCursorHold.nvim'
+" Plug 'antoinemadec/FixCursorHold.nvim'
 
 " GLSL
 Plug 'tikhomirov/vim-glsl'
@@ -74,6 +74,9 @@ let mapleader = " "
 ""
 "" Lua
 ""
+
+" nvim-tree
+luafile ~/.config/nvim/plugin/_nvimtree.lua
 
 " Compe (autocompletion, diagnostics, etc.)
 luafile ~/.config/nvim/plugin/_compe.lua

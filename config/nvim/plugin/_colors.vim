@@ -7,9 +7,11 @@ fun! WeDoItForTheMakers()
     endif
 
     set background=dark
-    let g:everforest_background = 'hard'
-    let g:everforest_transparent_background = 1
-    colorscheme everforest
+
+    " let g:everforest_background = 'hard'
+    " let g:everforest_transparent_background = 1
+
+    colorscheme nord
 
     hi Normal ctermbg=none guibg=none
     hi NonText ctermbg=none guibg=none
