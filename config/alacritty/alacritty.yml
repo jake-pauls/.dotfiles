@@ -21,6 +21,8 @@ window:
   dynamic_padding: true
   decorations: Full
 
+  opacity: 0.95
+
   startup_mode: Windowed
 
   title: Alacritty
@@ -146,8 +148,6 @@ schemes:
       white: "#d3c6aa"
 
 colors: *nord
-
-background_opacity: 0.90
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

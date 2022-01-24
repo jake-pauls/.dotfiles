@@ -27,7 +27,9 @@ alias pacgod="yay -Syu"                     # Update Standard and AUR Packages
 alias pacup="sudo pacman -Syyu"             # Standard Package Update
 alias yayup="yay -Sua"                      # Update AUR
 
-# Colorize ls output
+# Disable ls highlighting, use automatic colors otherwise
+LS_COLORS=$LS_COLORS:'ow=1;34:' ; export LS_COLORS
+
 alias ls='ls --color=auto'
 
 # Colorize grep output (similar to rg)
