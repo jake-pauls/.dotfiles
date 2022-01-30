@@ -45,8 +45,8 @@ Plug 'tpope/vim-commentary'
 Plug 'Yggdroot/indentLine'
 
 " Theming
-Plug 'sainnhe/everforest'
 Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
 
 " Transparency
 Plug 'miyakogi/seiya.vim'

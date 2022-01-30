@@ -8,13 +8,11 @@ fun! WeDoItForTheMakers()
 
     set background=dark
 
-    " let g:everforest_background = 'hard'
-    " let g:everforest_transparent_background = 1
-
-    colorscheme nord
+   colorscheme gruvbox
 
     hi Normal ctermbg=none guibg=none
     hi NonText ctermbg=none guibg=none
+    hi EndOfBuffer ctermfg=2021
     hi LineNr guifg=#918175
     hi TelescopeBorder guifg=#5eacd
 endfun
