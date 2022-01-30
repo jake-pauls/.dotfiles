@@ -1,13 +1,14 @@
 <h1 align="center">.dotfiles</h1>
-<h3 align="center">aka: my life in archlinux (yes, I did name my machine "skynet")</h3>
+<h3 align="center">aka: my life in arch (yes, I did name my machine "skynet")</h3>
 
 <p align="center">
     <img src="skynet.png" alt="Skynet" />
 </p>
 
-## Overview
-- **OS** - [ArchLinux](https://archlinux.org/)
+## Overview (✨ what I'm currently having fun with ✨)
+- **OS** - [ArcoLinux](https://arcolinux.com/)
 - **Window Manager** - [Awesome](https://awesomewm.org/)
+- **Desktop Environment** - (modified) [GNOME](https://gnome.org/)
 - **Text Editor** - [Neovim](https://neovim.io/)
 - **Terminal** - [Alacritty](https://github.com/alacritty/alacritty)
 - **Shells**
@@ -28,7 +29,7 @@
 
 ## Installation
 Note: Ensure you grab the proper video drivers for your graphics card.
-My configuration installis the `nvidia` proprietary drivers.
+My configuration installs the `nvidia` proprietary drivers.
 
 To grab my latest configuration, clone this repository in your root directory and run the following:
 ```

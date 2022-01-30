@@ -41,6 +41,9 @@ alias fgrep='fgrep --color=auto'
 alias drive="cd / && cd /media/Storage/FileStorage"
 alias projects="cd / && cd /media/Storage/FileStorage/Projects"
 
+# Fetch
+alias fm6000="fm6000 -f ~/.dotfiles/config/fm6000/s.txt"
+
 # alias wsl-drive="cd / && cd /mnt/e/FileStorage"
 # alias wsl-projects="cd / && cd /mnt/e/FileStorage/Projects"
 
