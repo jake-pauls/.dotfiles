@@ -3,13 +3,14 @@
 ""
 
 " Tabbing
-set tabstop=8
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
 " For indentline plug
 set expandtab
 set smartindent
+set autoindent
 
 " Do not wrap text when off screen
 set nowrap

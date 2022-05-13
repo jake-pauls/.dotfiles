@@ -8,7 +8,7 @@ fun! WeDoItForTheMakers()
 
     set background=dark
 
-   colorscheme gruvbox
+   colorscheme nord
 
     hi Normal ctermbg=none guibg=none
     hi NonText ctermbg=none guibg=none

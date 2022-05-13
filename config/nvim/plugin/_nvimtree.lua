@@ -1,9 +1,10 @@
 require'nvim-tree'.setup {
+  sort_by             = "name",
   disable_netrw       = false,
   hijack_netrw        = false,
   open_on_setup       = false,
   ignore_ft_on_setup  = {},
-  auto_close          = false,
+  sort_by             = "name",
   open_on_tab         = false,
   hijack_cursor       = false,
   update_cwd          = false,
@@ -55,6 +56,23 @@ require'nvim-tree'.setup {
     number = false,
     relativenumber = false,
     signcolumn = "yes"
+  },
+  actions = {
+    use_system_clipboard = true,
+    open_file = {
+      quit_on_open = false,
+      resize_window = false,
+    },
+  },
+  renderer = {
+    indent_markers = {
+      enable = false,
+      icons = {
+        corner = "└ ",
+        edge = "│ ",
+        none = "  ",
+      },
+    },
   },
   trash = {
     cmd = "trash",

@@ -20,6 +20,7 @@ lua <<EOF
             "toml",
             "yaml",
             "jsonc",
+            "lua",
         },
 
         highlight = {

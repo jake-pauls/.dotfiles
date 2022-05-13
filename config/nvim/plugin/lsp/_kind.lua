@@ -1,9 +1,9 @@
 require('lspkind').init({
-    -- enables text annotations
-    with_text = true,
+    -- defines how annotations are shown
+    mode = 'text_symbol',
 
-    -- default symbol map ('default' or 'codicons')
-    preset = 'codicons',
+    -- codicon symbol map
+    presets = 'codicons',
 
     symbol_map = {
       Text = "",

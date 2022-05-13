@@ -1,8 +1,6 @@
 " Variables
 let g:nvim_tree_side = 'left'
 let g:nvim_tree_width = 25
-let g:nvim_tree_quit_on_open = 0
-let g:nvim_tree_indent_markers = 1
 let g:nvim_tree_git_hl = 1
 let g:nvim_tree_root_folder_modifier = ':~'
 let g:nvim_tree_special_files = ['README.md', 'Makefile', 'Dockerfile', 'docker-compose.yml', 'docker-compose.yaml']

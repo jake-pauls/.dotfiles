@@ -1,6 +1,6 @@
 " mode_map overrides the default mode names
 let g:lightline = {
-           \ 'colorscheme': 'gruvbox',
+           \ 'colorscheme': 'nord',
            \ 'active': {
            \   'left': [ [ 'mode', 'paste' ],
            \             [ 'gitbranch', 'readonly', 'filename', 'modified'] ],

@@ -67,6 +67,9 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
+" Terminal
+Plug 'akinsho/toggleterm.nvim'
+
 call plug#end()
 
 let mapleader = " "
@@ -91,6 +94,9 @@ luafile ~/.config/nvim/plugin/lsp/_go.lua
 luafile ~/.config/nvim/plugin/lsp/_python.lua
 luafile ~/.config/nvim/plugin/lsp/_bash.lua
 luafile ~/.config/nvim/plugin/lsp/_rust.lua
+
+" Toggleterm
+luafile ~/.config/nvim/plugin/_toggleterm.lua
 
 ""
 "" Utils
