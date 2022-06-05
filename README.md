@@ -1,18 +1,18 @@
 <h1 align="center">.dotfiles</h1>
-<h3 align="center">aka: my life in arch (yes, I did name my machine "skynet")</h3>
+<h3 align="center">aka: my life in arch (yes, I did name my laptop "ultron")</h3>
 
 <p align="center">
-    <img src="skynet.png" alt="Skynet" />
+    <!-- <img src="skynet.png" alt="Skynet" /> -->
+    <img src="ultron.png" alt="Ultron" />
 </p>
 
 ## Overview (✨ what I'm currently having fun with ✨)
 - **OS** - [ArcoLinux](https://arcolinux.com/)
 - **Window Manager** - [Awesome](https://awesomewm.org/)
-- **Desktop Environment** - (modified) [GNOME](https://gnome.org/)
+- **Desktop Environment** - (modified) [GNOME](https://gnome.org/) // (default-ish) [xfce4](https://xfce.org/)
 - **Text Editor** - [Neovim](https://neovim.io/)
 - **Terminal** - [Alacritty](https://github.com/alacritty/alacritty)
 - **Shells**
-  - [bash](https://www.gnu.org/software/bash/)
   - [zsh](https://www.zsh.org/)
 - **Shell Prompt** - [Starship](https://starship.rs/)
 - **Package Managers**
