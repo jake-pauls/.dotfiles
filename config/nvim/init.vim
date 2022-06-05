@@ -70,6 +70,9 @@ Plug 'prettier/vim-prettier', {
 " Terminal
 Plug 'akinsho/toggleterm.nvim'
 
+" TeX
+Plug 'lervag/vimtex'
+
 call plug#end()
 
 let mapleader = " "
