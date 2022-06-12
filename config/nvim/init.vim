@@ -13,6 +13,9 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
+" Alpha
+Plug 'goolord/alpha-nvim'
+
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
@@ -46,6 +49,7 @@ Plug 'Yggdroot/indentLine'
 
 " Theming
 Plug 'arcticicestudio/nord-vim'
+Plug 'rmehri01/onenord.nvim'
 Plug 'morhetz/gruvbox'
 
 " Transparency
@@ -75,14 +79,25 @@ Plug 'lervag/vimtex'
 
 call plug#end()
 
+" Use space for leader
 let mapleader = " "
+
+" NOTE: Hacky way to start alpha by default instead of netrw
+let loaded_netrwPlugin = 1
+autocmd VimEnter * Alpha
 
 ""
 "" Lua
 ""
 
+" alpha-nvim
+luafile ~/.config/nvim/plugin/_alpha.lua
+
 " nvim-tree
 luafile ~/.config/nvim/plugin/_nvimtree.lua
+
+" telescope
+luafile ~/.config/nvim/plugin/_telescope.lua
 
 " Compe (autocompletion, diagnostics, etc.)
 luafile ~/.config/nvim/plugin/_compe.lua

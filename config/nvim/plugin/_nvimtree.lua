@@ -1,13 +1,14 @@
 require'nvim-tree'.setup {
-  sort_by             = "name",
-  disable_netrw       = false,
-  hijack_netrw        = false,
-  open_on_setup       = false,
-  ignore_ft_on_setup  = {},
-  sort_by             = "name",
-  open_on_tab         = false,
-  hijack_cursor       = false,
-  update_cwd          = false,
+  auto_reload_on_write = true,
+  sort_by              = "name",
+  disable_netrw        = false,
+  hijack_netrw         = false,
+  open_on_setup        = false,
+  ignore_ft_on_setup   = {},
+  sort_by              = "name",
+  open_on_tab          = false,
+  hijack_cursor        = false,
+  update_cwd           = true,
   update_to_buf_dir   = {
     enable = true,
     auto_open = true,
@@ -39,8 +40,8 @@ require'nvim-tree'.setup {
     }
   },
   git = {
-    enable = true,
-    ignore = true,
+    enable  = true,
+    ignore  = false,
     timeout = 500,
   },
   view = {

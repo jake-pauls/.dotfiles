@@ -1,3 +1,15 @@
+" Create bufferline option dict
+let bufferline = get(g:, 'bufferline', {})
+
+" No-name bufer set
+let bufferline.no_name_title = v:null
+
+" Never auto-hide the bufferline
+let bufferline.autohide = v:false
+
+" Set bufferline padding and length
+let bufferline.maximum_padding = 6
+
 " Move to previous/next tab
 nnoremap <silent><A-,> :BufferPrevious<CR>
 nnoremap <silent><A-.> :BufferNext<CR>
@@ -19,3 +31,4 @@ nnoremap <silent><A-9> :BufferLast<CR>
 
 " Close tab
 nnoremap <silent><A-q> :BufferClose<CR>
+
