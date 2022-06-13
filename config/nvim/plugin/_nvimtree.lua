@@ -1,8 +1,8 @@
 require'nvim-tree'.setup {
   auto_reload_on_write = true,
   sort_by              = "name",
-  disable_netrw        = false,
-  hijack_netrw         = false,
+  disable_netrw        = true,
+  hijack_netrw         = true,
   open_on_setup        = false,
   ignore_ft_on_setup   = {},
   sort_by              = "name",

@@ -82,10 +82,6 @@ call plug#end()
 " Use space for leader
 let mapleader = " "
 
-" NOTE: Hacky way to start alpha by default instead of netrw
-let loaded_netrwPlugin = 1
-autocmd VimEnter * Alpha
-
 ""
 "" Lua
 ""
