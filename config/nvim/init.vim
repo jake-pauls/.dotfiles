@@ -13,9 +13,6 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
-" Alpha
-Plug 'goolord/alpha-nvim'
-
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
@@ -32,6 +29,9 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'ryanoasis/vim-devicons'
 
+" Alpha (Greeter)
+Plug 'goolord/alpha-nvim'
+
 " Statusline
 Plug 'itchyny/lightline.vim'
 
@@ -43,6 +43,10 @@ Plug 'tpope/vim-fugitive'
 
 " Commenting
 Plug 'tpope/vim-commentary'
+Plug 'suy/vim-context-commentstring'
+
+" Auto-Pairs
+Plug 'jiangmiao/auto-pairs'
 
 " Characters for Indent Recognition
 Plug 'Yggdroot/indentLine'
@@ -50,7 +54,6 @@ Plug 'Yggdroot/indentLine'
 " Theming
 Plug 'arcticicestudio/nord-vim'
 Plug 'rmehri01/onenord.nvim'
-Plug 'morhetz/gruvbox'
 
 " Transparency
 Plug 'miyakogi/seiya.vim'

@@ -8,7 +8,6 @@ set softtabstop=4
 set shiftwidth=4
 
 " For indentline plug
-set expandtab
 set smartindent
 set autoindent
 
@@ -20,7 +19,7 @@ set backspace=indent,eol,start
 
 " Line numbers relative to current line
 set number
-set numberwidth=2
+set numberwidth=1
 set relativenumber
 
 " Disable swap files
@@ -31,8 +30,8 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 
-" Always keep an 8 line padding around cursor before scrolling
-set scrolloff=8
+" Always keep an 12 line padding around cursor before scrolling
+set scrolloff=12
 
 " Search and highlight while typing
 set nohlsearch
