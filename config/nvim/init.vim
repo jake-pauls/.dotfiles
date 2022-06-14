@@ -55,13 +55,11 @@ Plug 'morhetz/gruvbox'
 " Transparency
 Plug 'miyakogi/seiya.vim'
 
+" Zen Mode
+Plug 'folke/zen-mode.nvim'
+
 " C/C++ Syntax Highlighting
 Plug 'bfrg/vim-cpp-modern'
-
-" CMake
-" Plug 'cdelledonne/vim-cmake'
-" Improves performance for neovim CursorHold autocmd events
-" Plug 'antoinemadec/FixCursorHold.nvim'
 
 " GLSL
 Plug 'tikhomirov/vim-glsl'
@@ -111,6 +109,9 @@ luafile ~/.config/nvim/plugin/lsp/_rust.lua
 
 " Toggleterm
 luafile ~/.config/nvim/plugin/_toggleterm.lua
+
+" Zen mode
+luafile ~/.config/nvim/plugin/_zenmode.lua
 
 ""
 "" Utils

@@ -15,3 +15,6 @@ vnoremap <leader>y y:call ClipboardYank()<CR>
 vnoremap <leader>d d:call ClipboardYank()<CR>
 " Paste
 nnoremap <leader>p :call ClipboardPaste()<CR>
+
+" ZenMode
+nnoremap <leader>zm <cmd>ZenMode<CR>

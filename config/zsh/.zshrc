@@ -6,6 +6,9 @@
 ## General
 ##
 
+# Use Neovim as the default editor
+export EDITOR='nvim'
+
 # Use bat for reading manpages
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 

@@ -35,7 +35,7 @@ nnoremap <leader>bs <cmd>lua require('telescope.builtin').spell_suggest()<CR>
 ""
 
 " Implementations
-nnoremap <leader>gd <cmd>lua require('telescope.builtin').lsp_definitions({ jump_type = "vsplit" })<CR>
+nnoremap <leader>gd <cmd>lua require('telescope.builtin').lsp_definitions()<CR>
 
 " Diagnostics
 nnoremap <leader>gdg <cmd>lua require('telescope.builtin').diagnostics()<CR>
