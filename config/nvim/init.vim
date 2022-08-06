@@ -49,7 +49,8 @@ Plug 'suy/vim-context-commentstring'
 Plug 'jiangmiao/auto-pairs'
 
 " Characters for Indent Recognition
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Theming
 Plug 'arcticicestudio/nord-vim'

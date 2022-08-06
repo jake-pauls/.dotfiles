@@ -87,9 +87,6 @@ function theme.at_screen_connect(s)
     -- Create a tasklist widget
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.focused, awful.util.tasklist_buttons)
 
-    -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(16), bg = theme.bg_normal, fg = theme.fg_normal })
-
     -- Launcher
     local mylauncher = awful.widget.button({ image = theme.arch_launcher })
     local mylaunchermenu = awful.menu({
@@ -100,27 +97,29 @@ function theme.at_screen_connect(s)
     })
     mylauncher:connect_signal("button::press", function() mylaunchermenu:toggle() end)
 
-    -- Add widgets to the wibox
-    s.mywibox:setup {
-        layout = wibox.layout.align.horizontal,
-        expand = "none",
-        { -- Left widgets
-            layout = wibox.layout.fixed.horizontal,
-            mylauncher,
-            s.mytaglist,
-            s.mypromptbox,
-            s.mytasklist,
-       },
-        { -- Middle widgets
-            layout = wibox.layout.fixed.horizontal,
-            mytextclock,
-        },
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            wibox.container.margin(wibox.widget.systray(), 5, 5, 5, 5),
-       },
+    -- Create the wibox
+    -- s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(16), bg = theme.bg_normal, fg = theme.fg_normal })
 
-    }
+    -- Add widgets to the wibox
+    -- s.mywibox:setup {
+    --     layout = wibox.layout.align.horizontal,
+    --     expand = "none",
+    --     { -- Left widgets
+    --         layout = wibox.layout.fixed.horizontal,
+    --         mylauncher,
+    --         s.mytaglist,
+    --         s.mypromptbox,
+    --         s.mytasklist,
+    --    },
+    --     { -- Middle widgets
+    --         layout = wibox.layout.fixed.horizontal,
+    --         mytextclock,
+    --     },
+    --     { -- Right widgets
+    --         layout = wibox.layout.fixed.horizontal,
+    --         wibox.container.margin(wibox.widget.systray(), 5, 5, 5, 5),
+    --    },
+    -- }
 
 end
 
