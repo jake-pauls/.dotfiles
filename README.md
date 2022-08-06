@@ -9,11 +9,12 @@
 ## Overview (✨ what I'm currently having fun with ✨)
 - **OS** - [ArcoLinux](https://arcolinux.com/)
 - **Window Manager** - [Awesome](https://awesomewm.org/)
-- **Desktop Environment** - (modified) [GNOME](https://gnome.org/) // (default-ish) [xfce4](https://xfce.org/)
+- **Desktop Environment** - [xfce4](https://xfce.org/)
 - **Text Editor** - [Neovim](https://neovim.io/)
 - **Terminal** - [Alacritty](https://github.com/alacritty/alacritty)
 - **Shells**
   - [zsh](https://www.zsh.org/)
+  - [fish](https://fishshell.com/)
 - **Shell Prompt** - [Starship](https://starship.rs/)
 - **Package Managers**
   - [pacman](https://wiki.archlinux.org/title/pacman) (Arch Base Repositories)

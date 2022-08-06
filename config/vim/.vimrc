@@ -52,6 +52,5 @@ set noshowmode
 set completeopt=menuone,noinsert,noselect
 set hidden
 set noerrorbells
-set signcolumn=yes
 set conceallevel=1
 set cmdheight=1

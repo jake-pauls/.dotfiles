@@ -8,7 +8,7 @@ fun! WeDoItForTheMakers()
 
     set background=dark
 
-   colorscheme onenord
+   colorscheme nord
 
     hi Normal ctermbg=none guibg=none
     hi NonText ctermbg=none guibg=none
