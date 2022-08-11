@@ -297,22 +297,22 @@ format-full-prefix = "✔ "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-; ramp-capacity-0 = 
-; ramp-capacity-1 = 
-; ramp-capacity-2 = 
-; ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
 
-; animation-charging-0 = 
-; animation-charging-1 = 
-; animation-charging-2 = 
-; animation-charging-foreground = ${colors.foreground-alt}
-; animation-charging-framerate = 750
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-framerate = 750
 
-; animation-discharging-0 = 
-; animation-discharging-1 = 
-; animation-discharging-2 = 
-; animation-discharging-foreground = ${colors.foreground-alt}
-; animation-discharging-framerate = 750
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-foreground = ${colors.foreground-alt}
+animation-discharging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
@@ -327,6 +327,7 @@ format-warn-underline = ${self.secondary-alt}
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.foreground}
+label-warn-underline = ${colors.secondary-alt}
 
 ramp-0 = ""
 ramp-1 = ""
