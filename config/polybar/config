@@ -63,10 +63,10 @@ modules-left = cpu memory
 modules-center = date
 modules-right = temperature battery
 
-; tray-position = right
-; tray-padding = 4
-; tray-background = #2e3440
-; tray-maxsize = 20
+tray-position = right
+tray-padding = 4
+tray-background = #2e3440
+tray-maxsize = 20
 
 override-redirect = false
 

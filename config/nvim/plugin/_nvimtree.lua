@@ -9,19 +9,6 @@ require'nvim-tree'.setup {
   open_on_tab          = false,
   hijack_cursor        = false,
   update_cwd           = true,
-  update_to_buf_dir   = {
-    enable = true,
-    auto_open = true,
-  },
-  diagnostics = {
-    enable = false,
-    icons = {
-      hint = "",
-      info = "",
-      warning = "",
-      error = "",
-    }
-  },
   update_focused_file = {
     enable      = false,
     update_cwd  = false,
@@ -49,7 +36,7 @@ require'nvim-tree'.setup {
     height = 25,
     hide_root_folder = false,
     side = 'left',
-    auto_resize = true,
+    -- auto_resize = true,
     mappings = {
       custom_only = false,
       list = {}
@@ -66,13 +53,63 @@ require'nvim-tree'.setup {
     },
   },
   renderer = {
+	add_trailing = false,
+	highlight_git = true,
+    root_folder_modifier = ":~",
     indent_markers = {
       enable = false,
+	  inline_arrows = true,
       icons = {
         corner = "└ ",
         edge = "│ ",
         none = "  ",
+	  }
+    },
+	icons = {
+      webdev_colors = true,
+      git_placement = "before",
+      padding = " ",
+      symlink_arrow = " ➛ ",
+      show = {
+        file = true,
+        folder = true,
+        folder_arrow = true,
+        git = true,
       },
+      glyphs = {
+        default = "",
+        symlink = "",
+        bookmark = "",
+        folder = {
+        arrow_closed = "",
+          arrow_open = "",
+          default = "",
+          open = "",
+          empty = "",
+          empty_open = "",
+          symlink = "",
+          symlink_open = "",
+        },
+        git = {
+          unstaged = "✗",
+          staged = "✓",
+          unmerged = "",
+          renamed = "➜",
+          untracked = "★",
+          deleted = "",
+          ignored = "◌",
+        },
+      },
+	},
+	special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md", "Dockerfile", "premake5.lua", "CMakeLists.txt" },
+	symlink_destination = true,
+  },
+  diagnostics = {
+    icons = {
+	  hint = "",
+      info = "",
+      warning = "",
+      error = "",
     },
   },
   trash = {
