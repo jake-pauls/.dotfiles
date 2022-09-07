@@ -45,11 +45,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'suy/vim-context-commentstring'
 
-" Auto-Pairs
-Plug 'jiangmiao/auto-pairs'
-
 " Characters for Indent Recognition
-" Plug 'Yggdroot/indentLine'
 Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Theming
