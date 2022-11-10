@@ -127,4 +127,5 @@ endfun
 augroup CodeQuality
     autocmd!
     autocmd BufWritePre * :call TrimWhitespace()
+	autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
 augroup END

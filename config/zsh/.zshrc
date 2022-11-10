@@ -9,6 +9,10 @@
 # Use Neovim as the default editor
 export EDITOR='nvim'
 
+# Use gcc for default C/C++ compiler
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
+
 # Use bat for reading manpages
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 

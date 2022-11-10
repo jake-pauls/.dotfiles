@@ -6,7 +6,7 @@
 Xcursor.theme:   Qogir-dark
 Xcursor.size:    16
 
-Xft.dpi: 121
+Xft.dpi: 90
 
 ! SXIV
 Sxiv.foreground: #baa67f
