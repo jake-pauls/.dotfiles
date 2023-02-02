@@ -1,5 +1,5 @@
 " Remap default mapping from <leader>p
-nmap <leader>py <Plug>(Prettier)
+nnoremap <leader>pt <Plug>(Prettier)
 
 " Auto format files without '@prettier' decorator
 let g:prettier#autoformat_require_pragma = 0

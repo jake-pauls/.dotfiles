@@ -2,10 +2,10 @@
 let g:netrw_liststyle = 3
 
 " System clipboard remaps
-func! ClipboardYank()
+fun! ClipboardYank()
     call system('xclip -i -selection clipboard', @@)
 endfun
-func! ClipboardPaste()
+fun! ClipboardPaste()
     let @@ = system('xclip -o -selection clipboard')
 endfun
 
@@ -18,3 +18,21 @@ nnoremap <leader>p :call ClipboardPaste()<CR>
 
 " ZenMode
 nnoremap <leader>zm <cmd>ZenMode<CR>
+
+" Toggling C/C++ Header file
+fun! SwitchSourceHeader()
+  let cpp = expand("%:e") == "cpp"
+  let c = expand("%:e") == "c"
+
+  if (cpp || c)
+    find %:t:r.h
+  else
+	if (cpp)
+		find %:t:r.cpp
+	else
+		find %:t:r.c
+	endif
+  endif
+endfun
+
+nmap <A-o> :call SwitchSourceHeader()<CR>

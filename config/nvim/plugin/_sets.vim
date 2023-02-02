@@ -10,6 +10,7 @@ set shiftwidth=4
 " For indentline plug
 set smartindent
 set autoindent
+set cindent
 
 " Do not wrap text when off screen
 set nowrap

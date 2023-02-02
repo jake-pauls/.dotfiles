@@ -1,14 +1,26 @@
 " Create bufferline option dict
 let bufferline = get(g:, 'bufferline', {})
 
-" No-name bufer set
+" Enable bufferline diagnostics
+let bufferline.diagnostics = [
+  \ {'enabled': v:true, 'icon': 'ﬀ'},
+  \ {'enabled': v:false},
+  \ {'enabled': v:false},
+  \ {'enabled': v:true},
+\]
+
+" No-name bufer set - [buffer X] by default
 let bufferline.no_name_title = v:null
 
 " Never auto-hide the bufferline
 let bufferline.autohide = v:false
 
+" Hide file extensions and prevent hiding inactive buffers
+let bufferline.hide = {'extensions': v:true, 'inactive': v:false}
+
 " Set bufferline padding and length
-let bufferline.maximum_padding = 6
+let bufferline.maximum_padding = 4
+let bufferline.minimum_padding = 1
 
 " Move to previous/next tab
 nnoremap <silent><A-,> :BufferPrevious<CR>

@@ -6,6 +6,8 @@ env:
   TERM: xterm-256color
 
 window:
+  opacity: 0.91
+
   dimensions:
     columns: 0
     lines: 0
@@ -20,8 +22,6 @@ window:
 
   dynamic_padding: true
   decorations: Full
-
-  opacity: 0.95
 
   startup_mode: Windowed
 
@@ -56,7 +56,7 @@ font:
     family: JetBrains Mono Nerd Font
     style: Bold Italic
 
-  size: 11.0
+  size: 14.0
 
   offset:
     x: 0

@@ -687,6 +687,6 @@ beautiful.systray_icon_spacing = 5
 
 -- Autorun
 awful.spawn.with_shell("nitrogen --restore")
-awful.spawn.with_shell("picom --experimental-backends")
+awful.spawn.with_shell("picom &")
 awful.spawn.with_shell("~/.dotfiles/config/polybar/launch.sh")
 

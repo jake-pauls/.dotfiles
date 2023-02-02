@@ -8,6 +8,7 @@ $username\
 $hostname\
 $directory\
 $git_branch\
+$python\
 $character\
 """
 
@@ -63,6 +64,11 @@ style = ""
 
 [nodejs]
 format = "[ $version ](bold green)"
+
+[python]
+symbol = "🐍 "
+python_binary = ['./venv/bin/python']
+format = "[$symbol($output$virtualenv )]($style)"
 
 [custom.npm]
 description = "Version for npm in the working directory"

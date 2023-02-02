@@ -8,7 +8,13 @@ fun! WeDoItForTheMakers()
 
     set background=dark
 
-   colorscheme nord
+	let g:nord_contrast = v:true
+	let g:nord_borders = v:true
+	let g:nord_disable_background = v:false
+	let g:nord_italic = v:true
+	let g:nord_uniform_diff_background = v:true
+	let g:nord_bold = v:true
+	colorscheme nord
 
     hi Normal ctermbg=none guibg=none
     hi NonText ctermbg=none guibg=none

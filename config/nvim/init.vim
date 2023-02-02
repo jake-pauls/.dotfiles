@@ -49,7 +49,8 @@ Plug 'suy/vim-context-commentstring'
 Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Theming
-Plug 'arcticicestudio/nord-vim'
+" Plug 'arcticicestudio/nord-vim'
+Plug 'shaunsingh/nord.nvim'
 Plug 'rmehri01/onenord.nvim'
 
 " Transparency
@@ -65,9 +66,7 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'tikhomirov/vim-glsl'
 
 " Prettier
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 " Terminal
 Plug 'akinsho/toggleterm.nvim'

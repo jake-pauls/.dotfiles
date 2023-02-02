@@ -9,8 +9,7 @@
 
 --]]
 
--- Imports and Declarations
-local gears     = require("gears")
+-- Imports and Declarations local gears     = require("gears")
 local lain      = require("lain")
 local awful     = require("awful")
 local wibox     = require("wibox")
@@ -48,7 +47,7 @@ theme.arch_launcher                             = theme.confdir .. "/icons/arch.
 
 -- Variables
 theme.menu_width                                = dpi(130)
-theme.border_width                              = dpi(0.5)
+theme.border_width                              = dpi(0.75)
 theme.tasklist_plain_task_name                  = true
 theme.tasklist_disable_icon                     = true
 theme.menu_border_width                         = 0
