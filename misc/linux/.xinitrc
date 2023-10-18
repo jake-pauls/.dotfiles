@@ -1,5 +1,9 @@
 #!/bin/sh
 
+## jake pauls
+## https://jakepauls.dev
+## https://github.com/jake-pauls
+
 userresources=$HOME/.Xresources
 sysresources=/etc/X11/xinit/.Xresources
 

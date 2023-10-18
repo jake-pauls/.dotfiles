@@ -1,4 +1,4 @@
-" Jake Pauls
+" jake pauls
 " https://jakepauls.dev
 " https://github.com/jake-pauls
 

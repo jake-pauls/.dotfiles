@@ -1,4 +1,4 @@
-# Jake Pauls
+# jake pauls
 # https://jakepauls.dev
 # https://github.com/jake-pauls
 
@@ -124,30 +124,7 @@ schemes:
       cyan: "#6d96a5"
       white: "#aeb3bb"
 
-  everforest_dark_hard: &everforest_dark_hard
-    primary:
-      background: "#2b3339"
-      foreground: "#d3c6aa"
-    normal:
-      black: "#4b565c"
-      red: "#e67e80"
-      green: "#a7c080"
-      yellow: "#dbbc7f"
-      blue: "#7fbbb3"
-      magenta: "#d699b6"
-      cyan: "#83c092"
-      white: "#d3c6aa"
-    bright:
-      black: "#4b565c"
-      red: "#e67e80"
-      green: "#a7c080"
-      yellow: "#dbbc7f"
-      blue: "#7fbbb3"
-      magenta: "#d699b6"
-      cyan: "#83c092"
-      white: "#d3c6aa"
-
-colors: *everforest_dark_hard
+colors: *nord
 
 background_opacity: 1
 

@@ -4,6 +4,7 @@
 # https://jakepauls.dev
 # https://github.com/jake-pauls
 
+# Configures sym links...
 # Removes existing files in home directory and symlinks files from .dotfiles repo
 # Be mindful executing this, as its currently opinionated for a clean ArchLinux installation
 
@@ -18,10 +19,10 @@ cd ~ && mkdir .config
 
 # Manually configured symlinks
 rm ~/.Xresources
-ln -sf $dpath/misc/.Xresources ~/.Xresources
+ln -sf $dpath/misc/linux/.Xresources ~/.Xresources
 
 rm ~/.xinitrc
-ln -sf $dpath/misc/.xinitrc ~/.xinitrc
+ln -sf $dpath/misc/linux/.xinitrc ~/.xinitrc
 
 rm ~/.bashrc
 ln -sf $dpath/config/bash/.bashrc ~/.bashrc
@@ -36,7 +37,7 @@ rm ~/.config/starship.toml
 ln -sf $dpath/config/starship/starship.toml ~/.config/starship.toml
 
 # Append some sane path defaults from this .dotfiles repo only
-cat $dpath/misc/.profile > ~/.profile
+cat $dpath/misc/linux/.profile > ~/.profile
 echo "[info] Appended \$PATH defaults to ~/.profile."
 
 # .config symlinks
