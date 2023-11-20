@@ -5,7 +5,6 @@
 # https://github.com/jake-pauls
 
 # Connects the dots...
-# Bootstrap installation for Arch Linux
 # Assumptions: Clean Arch install with git and networking configured
 
 ###############
@@ -68,13 +67,10 @@ cd ~
 ##############
 
 lib=(
-    "nodejs"
-    "npm"
     "clang"
 )
 
 file=(
-    "ranger"
     "pcmanfm"
     "zathura"
     "zathura-pdf-poppler"
@@ -97,9 +93,7 @@ environment=(
 )
 
 terminal=(
-    "xterm"
     "alacritty"
-    "dash"
     "zsh"
     "starship"
 )
@@ -124,7 +118,6 @@ misc=(
 
 yay=(
     "nerd-fonts-complete"
-    "ttf-ms-fonts"
     "pfetch"
 )
 
@@ -134,20 +127,8 @@ sudo pacman -S ${lib[@]} ${file[@]} ${display[@]} ${environment[@]} ${terminal[@
 yay -S ${yay[@]}
 
 # Use dash as the default shell
-echo "[info] Changing default shell to dash"
-sudo chsh -s /usr/bin/dash
-
-############
-## Docker ##
-############
-while true; do
-  read -p "Would you like to install and configure Docker? (uses systemd)" yn
-  case $yn in
-    [Yy]* ) sudo pacman -S docker; sudo systemctl enable docker.service; sudo systemctl enable docker.containerd.service; break;;
-    [Nn]* ) exit;;
-    * ) echo "Please answer yes (Y/y) or no (N/n).";;
-  esac
-done
+echo "[info] Changing default shell to zsh"
+sudo chsh -s /usr/bin/zsh
 
 echo "[info] Successfully connected the dots."
 echo "[info] Please reboot! Otherwise, happy hacking!"

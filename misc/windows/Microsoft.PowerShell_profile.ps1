@@ -1,6 +1,6 @@
-## jake pauls
-## https://jakepauls.dev
-## https://github.com/jake-pauls
+# jake pauls
+# https://jakepauls.dev
+# https://github.com/jake-pauls
 
 # Import the Chocolatey Profile that contains the necessary code to enable
 # tab-completions to function for `choco`.

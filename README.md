@@ -9,21 +9,18 @@
 ## Overview (✨ what I'm currently having fun with ✨)
 - **OS** - [ArcoLinux](https://arcolinux.com/)
 - **Window Manager** - [Awesome](https://awesomewm.org/)
-- **Desktop Environment** - [xfce4](https://xfce.org/)
 - **Text Editor** - [Neovim](https://neovim.io/)
 - **Terminal** - [Alacritty](https://github.com/alacritty/alacritty)
 - **Shells**
   - [zsh](https://www.zsh.org/)
-  - [fish](https://fishshell.com/)
 - **Shell Prompt** - [Starship](https://starship.rs/)
 - **Package Managers**
   - [pacman](https://wiki.archlinux.org/title/pacman) (Arch Base Repositories)
   - [yay](https://github.com/Jguer/yay) (AUR)
 - **File Managers**
   - [pcmanfm](https://wiki.archlinux.org/title/PCManFM) (GUI)
-  - [ranger](https://github.com/ranger/ranger) (CLI)
 - **Document Reader** - [zathura](https://pwmt.org/projects/zathura/)
-- **CLI Tools (that are currently changing my life)**
+- **CLI Tools**
   - [bat](https://github.com/sharkdp/bat)
   - [ripgrep](https://github.com/BurntSushi/ripgrep)
   - [fd](https://github.com/sharkdp/fd)

@@ -37,6 +37,7 @@ alias yayup="yay -Sua"                      # Update AUR
 # Disable ls highlighting, use automatic colors otherwise
 LS_COLORS=$LS_COLORS:'ow=1;34:' ; export LS_COLORS
 
+# Colorize ls output
 alias ls='ls --color=auto'
 
 # Colorize grep output (similar to rg)
@@ -44,13 +45,5 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-# Personal Navigation
-alias drive="cd / && cd /media/Storage/FileStorage"
-alias projects="cd / && cd /media/Storage/FileStorage/Code/Projects"
-
-# Fetch
-alias fm6000="fm6000 -f ~/.dotfiles/config/fm6000/s.txt"
-
 # Starship Prompt
 eval "$(starship init zsh)"
-

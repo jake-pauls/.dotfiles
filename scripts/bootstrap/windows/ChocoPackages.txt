@@ -1,0 +1,13 @@
+discord
+everything
+firefox
+git
+jetbrainsmono
+less
+microsoft-windows-terminal --pre
+obs-studio
+python --pre
+spotify
+starship
+vscode
+windirstat
