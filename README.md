@@ -1,5 +1,4 @@
 <h1 align="center">.dotfiles</h1>
-<h3 align="center">aka: my life in arch (yes, I did name my laptop "ultron")</h3>
 
 <p align="center">
     <!-- <img src="skynet.png" alt="Skynet" /> -->
@@ -24,16 +23,6 @@
   - [bat](https://github.com/sharkdp/bat)
   - [ripgrep](https://github.com/BurntSushi/ripgrep)
   - [fd](https://github.com/sharkdp/fd)
-
-## Installation
-Note: Ensure you grab the proper video drivers for your graphics card.
-My configuration installs the `nvidia` proprietary drivers.
-
-To grab my latest configuration, clone this repository in your root directory and run the following:
-```
-# ~/.dotfiles/.scripts/...
-./connect-the-dots
-```
 
 ## Personal Note: Dual Booting Arch/Windows (Legacy/BIOS)
 Couldn't find as many straight forward resources regarding legacy dual booting for Arch/Windows clients.
