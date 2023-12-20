@@ -4,10 +4,10 @@ firefox
 git
 jetbrainsmono
 less
-microsoft-windows-terminal --pre
 obs-studio
-python --pre
+python
 spotify
+steam
 starship
 vscode
 windirstat
