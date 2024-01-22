@@ -2,11 +2,7 @@
 # https://jakepauls.dev
 # https://github.com/jake-pauls
 
-# Bootstraps a Windows Installation
-
-##########################
-## Package Installation ##
-##########################
+# Simple bootstrap for a Windows Installation
 
 # Install Chocolatey
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -18,18 +14,15 @@ foreach($package in $packages) {
     choco install --yes $package
 }
 
-##############
-## Symlinks ##
-##############
-
 # Config Directory
 md -Force $HOME\.config
 
 # Starship
-ni $HOME\.dotfiles\config\starship\starship.toml -i SymbolicLink -ta "$HOME\.config\"
+cp $HOME\.dotfiles\config\starship\starship.toml $HOME\.config\
 
 # Git Configuration
-ni $HOME\.dotfiles\config\git\config -i SymbolicLink -ta "$HOME\.gitconfig"
+md -Force $HOME\.config\git
+cp $HOME\.dotfiles\config\git\config $HOME\.config\git\
 
 # Default PowerShell Configuration
-ni $HOME\.dotfiles\misc\windows\Microsoft.PowerShell_profile.ps1 -i SymbolicLink -ta "$HOME\Documents\WindowsPowerShell"
+cp $HOME\.dotfiles\misc\windows\Microsoft.PowerShell_profile.ps1 $HOME\Documents\WindowsPowerShell
