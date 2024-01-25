@@ -109,6 +109,13 @@ local keys = {
 
 local opts = {
     defaults = {
+        file_ignore_patterns = {
+            "^node_modules/",
+            "^venv/",
+            "^__pycache__/",
+            "%.o",
+            "%.obj",
+        },
         layout_strategy = "horizontal",
         layout_config   = {
             bottom_pane = {

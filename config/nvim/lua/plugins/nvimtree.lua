@@ -5,7 +5,7 @@ local opts = {
     renderer = {
         group_empty = true,
         indent_width = 2,
-        special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md", ".gitignore", "premake5.lua", "CMakeLists.txt", }
+        special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md", ".gitignore", "premake5.lua", "CMakeLists.txt", },
     },
     filters = {
         git_ignored = false,

@@ -1,6 +1,7 @@
 local kind = require("plugins.lsp.kind")
 local cmp = require("plugins.lsp.cmp")
 local lua_server = require("plugins.lsp.servers.lua")
+local go_server = require("plugins.lsp.servers.go")
 
 local dependencies = {
     kind,
@@ -33,6 +34,7 @@ local opts = {}
 
 local config = function()
     lua_server.setup()
+    go_server.setup()
 end
 
 return {
