@@ -1,4 +1,5 @@
 local set = vim.opt
+local sysname = vim.loop.os_uname().sysname
 
 -- Numbers
 set.number = true
@@ -8,6 +9,7 @@ set.relativenumber = false
 set.tabstop = 4
 set.softtabstop = 4
 set.shiftwidth = 4
+set.linespace = 0
 set.expandtab = true
 set.smartindent = true
 
@@ -22,8 +24,13 @@ set.sidescroll = 2
 -- Artifacts
 set.swapfile = false
 set.backup = false
-set.undodir = os.getenv("HOME") .. "/.nvim/undodir"
 set.undofile = true
+
+if sysname == "Windows_NT" then
+    set.undodir = os.getenv("UserProfile") .. "\\.nvim\\undodir"
+else
+    set.undodir = os.getenv("HOME") .. "/.nvim/undodir"
+end
 
 -- Colors
 set.termguicolors = true

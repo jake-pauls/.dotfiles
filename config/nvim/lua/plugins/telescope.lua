@@ -1,3 +1,6 @@
+local fn = vim.fn
+local loop = vim.loop
+
 local dependencies = {
     {
         "nvim-lua/plenary.nvim",
@@ -5,15 +8,22 @@ local dependencies = {
     {
         "nvim-telescope/telescope-fzf-native.nvim",
         build = "make",
-        enabled = vim.fn.executable("make") == 1,
-    }
+        enabled = fn.executable("make") == 1,
+    },
+    {
+        "Verf/telescope-everything.nvim",
+        enabled = loop.os_uname().sysname == "Windows_NT",
+        init = function()
+            require("telescope").load_extension("everything")
+        end,
+    },
 }
 
 -- Executes the passed function if a '.git' directory exists in the current working directory
 -- Will log an error message if no git directory is present
 local function with_git_dir(fun)
-    local path = vim.loop.cwd() .. "/.git"
-    local ok, err = vim.loop.fs_stat(path)
+    local path = loop.cwd() .. "/.git"
+    local ok, err = loop.fs_stat(path)
     if ok then
         fun()
     else
@@ -55,7 +65,7 @@ local keys = {
     {
         "<leader>pw",
         function()
-            require("telescope.builtin").grep_string({ search = vim.fn.expand("<cword>") })
+            require("telescope.builtin").grep_string({ search = fn.expand("<cword>") })
         end,
         desc = "base: Project Search Current Word (Telescope)",
     },
@@ -104,6 +114,14 @@ local keys = {
             with_git_dir(telescope_git_buffer_commits)
         end,
         desc = "base: Buffer Git Commits (Telescope)",
+    },
+    -- Everything (Windows Only)
+    {
+        "<leader>es",
+        function()
+            require("telescope").extensions.everything.everything()
+        end,
+        desc = "base: Everything Search (Telescope - Windows Only)",
     },
 }
 

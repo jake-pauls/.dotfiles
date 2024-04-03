@@ -1,3 +1,5 @@
+local cmd = vim.cmd
+
 local opts = {
     sort = {
         sorter = "case_sensitive",
@@ -17,7 +19,6 @@ local opts = {
 }
 
 local config = function()
-    vim.cmd.highlight("NvimTreeWinSeparator guifg=#4c566a guibg=NONE") -- Change color match the current theme
     require("nvim-tree").setup()
 end
 
