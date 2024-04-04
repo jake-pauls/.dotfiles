@@ -2,9 +2,9 @@ local cmd = vim.cmd
 local g = vim.g
 
 return {
-    -- https://github.com/shaunsingh/nord.nvim
+    -- https://github.com/arcticicestudio/nord-vim
     {
-        "shaunsingh/nord.nvim",
+        "nordtheme/vim",
         lazy = false,
         priority = 1000,
         init = function()

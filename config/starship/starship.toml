@@ -22,7 +22,7 @@ disabled = true
 [username]
 show_always = true
 style_user = "bold yellow"
-format = "[\\[](bold blue)[$user]($style)[@](dimmed cyan)"
+format = "[\\[](bold blue)[$user]($style)[@](bright-cyan)"
 
 [hostname]
 ssh_only = false
@@ -36,14 +36,14 @@ error_symbol = "[\\$](bold red)"
 vicmd_symbol = "[\\$](bold blue)"
 
 [directory]
-style = "cyan"
+style = "italic purple"
 truncation_length = 1
 truncate_to_repo = true
 format = "[ $path]($style)[\\]](bold blue) "
 
 [git_branch]
 style = ""
-symbol = "🌿 "
+symbol = " "
 truncation_length = 32
 truncation_symbol = ""
 

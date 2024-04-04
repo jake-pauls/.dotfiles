@@ -26,12 +26,6 @@ set.swapfile = false
 set.backup = false
 set.undofile = true
 
-if sysname == "Windows_NT" then
-    set.undodir = os.getenv("UserProfile") .. "\\.nvim\\undodir"
-else
-    set.undodir = os.getenv("HOME") .. "/.nvim/undodir"
-end
-
 -- Colors
 set.termguicolors = true
 
