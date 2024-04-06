@@ -25,7 +25,7 @@ local config = function()
             },
             center = {
                 {
-                    icon = "↯  ",
+                    icon = "",
                     icon_hl = "Title",
                     desc = "Update packages",
                     desc_hl = "String",
@@ -36,7 +36,7 @@ local config = function()
                     action = "Lazy update",
                 },
                 {
-                    icon = "⏲  ",
+                    icon = "",
                     icon_hl = "Title",
                     desc = "Recent files",
                     desc_hl = "String",
@@ -47,7 +47,7 @@ local config = function()
                     action = "lua require(\"telescope.builtin\").oldfiles()",
                 },
                 {
-                    icon = "🔍 ",
+                    icon = "",
                     icon_hl = "Title",
                     desc = "Find files",
                     desc_hl = "String",
@@ -58,7 +58,7 @@ local config = function()
                     action = "lua require(\"telescope.builtin\").find_files()",
                 },
                 {
-                    icon = "🕮  ",
+                    icon = "",
                     icon_hl = "Title",
                     desc = "Find word",
                     desc_hl = "String",
@@ -69,7 +69,7 @@ local config = function()
                     action = "lua require(\"telescope.builtin\").live_grep()",
                 },
                 {
-                    icon = "🛈  ",
+                    icon = "",
                     icon_hl = "Title",
                     desc = "Help",
                     desc_hl = "String",
