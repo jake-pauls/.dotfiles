@@ -1,13 +1,29 @@
-local cmd = vim.cmd
-
 local opts = {
     sort = {
         sorter = "case_sensitive",
     },
     renderer = {
+        add_trailing = false,
         group_empty = true,
         indent_width = 2,
         special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md", ".gitignore", "premake5.lua", "CMakeLists.txt", },
+        highlight_git = "none",
+        highlight_diagnostics = "none",
+        highlight_opened_files = "none",
+        highlight_modified = "none",
+        highlight_bookmarks = "none",
+        highlight_clipboard = "name",
+        icons = {
+            show = {
+                file = true,
+                folder = true,
+                folder_arrow = false,
+                git = false,
+                modified = false,
+                diagnostics = true,
+                bookmarks = false,
+            },
+        },
     },
     filters = {
         git_ignored = false,
@@ -19,7 +35,7 @@ local opts = {
 }
 
 local config = function()
-    require("nvim-tree").setup()
+    require("nvim-tree").setup(opts)
 end
 
 local keys = {

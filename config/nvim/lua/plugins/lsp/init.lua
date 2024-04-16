@@ -1,7 +1,9 @@
 local kind = require("plugins.lsp.kind")
 local cmp = require("plugins.lsp.cmp")
+
 local lua_server = require("plugins.lsp.servers.lua")
 local go_server = require("plugins.lsp.servers.go")
+local clangd_server = require("plugins.lsp.servers.clangd")
 
 local dependencies = {
     kind,
@@ -28,6 +30,17 @@ local keys = {
         end,
         desc = "base: Browse LSP Diagnostics (Telescope)",
     },
+    {
+        "<leader>td",
+        function ()
+            if vim.diagnostic.is_disabled(0) then
+                vim.diagnostic.enable()
+            else
+                vim.diagnostic.disable()
+            end
+        end,
+        desc = "base: Toggle LSP Diagnostics",
+    },
 }
 
 local opts = {}
@@ -35,6 +48,7 @@ local opts = {}
 local config = function()
     lua_server.setup()
     go_server.setup()
+    clangd_server.setup()
 end
 
 return {

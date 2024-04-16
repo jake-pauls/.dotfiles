@@ -119,7 +119,11 @@ local keys = {
     {
         "<leader>es",
         function()
-            require("telescope").extensions.everything.everything()
+            if loop.os_uname().sysname == "Windows_NT" then
+                require("telescope").extensions.everything.everything()
+            else
+                print("Must be on a Windows machine to use Everything search!")
+            end
         end,
         desc = "base: Everything Search (Telescope - Windows Only)",
     },

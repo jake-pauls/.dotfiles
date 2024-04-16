@@ -20,6 +20,7 @@ local ts_opts = {
         "tsx",
         "typescript",
         "vim",
+        "vimdoc",
         "yaml",
     },
     sync_install = false,
