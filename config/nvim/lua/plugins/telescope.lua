@@ -137,6 +137,8 @@ local opts = {
             "^__pycache__/",
             "%.o",
             "%.obj",
+            "%.a",
+            "%.lib",
         },
         layout_strategy = "horizontal",
         layout_config   = {

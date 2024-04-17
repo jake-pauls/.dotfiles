@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/themes/jellybeans.toml"
+    "~/.config/alacritty/themes/nord.toml"
 ]
 
 [colors]
@@ -99,7 +99,7 @@ decorations = "Full"
 dynamic_padding = true
 dynamic_title = false
 decorations_theme_variant = "None"
-opacity = 0.91
+opacity = 1.0
 startup_mode = "Windowed"
 title = "Alacritty"
 

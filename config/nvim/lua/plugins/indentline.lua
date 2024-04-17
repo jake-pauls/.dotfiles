@@ -1,7 +1,7 @@
 local opts = {
     indent = {
         char = "▏",
-        tab_char = "",
+        tab_char = " ",
     },
     scope = { enabled = false, },
     exclude = {
@@ -22,5 +22,5 @@ return {
         lazy = false,
         opts = opts,
         main = "ibl",
-    }
+    },
 }

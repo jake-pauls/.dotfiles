@@ -1,5 +1,4 @@
 local set = vim.opt
-local sysname = vim.loop.os_uname().sysname
 
 -- Numbers
 set.number = true
@@ -28,6 +27,10 @@ set.undofile = true
 
 -- Colors
 set.termguicolors = true
+
+-- List Chars
+set.list = true
+set.listchars = { eol = "↲" }
 
 -- Ignore
 set.wildignore = set.wildignore + "*.o, *.obj, *.rej, *.so, *.dll, *.a, *.lib"

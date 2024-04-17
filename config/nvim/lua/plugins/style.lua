@@ -12,6 +12,9 @@ return {
             g.nord_disable_background = false
             g.nord_cursorline_transparent = true
         end,
+        config = function()
+            cmd.colorscheme("nord")
+        end,
     },
     -- https://github.com/metalelf0/jellybeans-nvim
     {
@@ -21,9 +24,6 @@ return {
         dependencies = {
             "rktjmp/lush.nvim"
         },
-        config = function()
-            cmd.colorscheme("jellybeans-nvim")
-        end,
     },
     -- https://github.com/nvim-tree/nvim-web-devicons
     {
