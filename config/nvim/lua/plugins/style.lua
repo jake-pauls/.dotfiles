@@ -1,20 +1,35 @@
 local cmd = vim.cmd
-local g = vim.g
+
+local nordopts = {
+    transparent = false,
+    terminal_colors = true,
+    borders = true,
+    search = {
+        theme = "vscode",
+    },
+    styles = {
+        comments = {
+            italic = true,
+        },
+        functions = {
+            bold = true,
+            italic = true,
+        },
+    },
+}
+
+local config = function()
+    require("nord").setup(nordopts)
+    cmd.colorscheme("nord")
+end
 
 return {
-    -- https://github.com/arcticicestudio/nord-vim
+    -- https://github.com/gbprod/nord.vim
     {
-        "nordtheme/vim",
+        "gbprod/nord.nvim",
         lazy = false,
         priority = 1000,
-        init = function()
-            g.nord_contrast = true
-            g.nord_disable_background = false
-            g.nord_cursorline_transparent = true
-        end,
-        config = function()
-            cmd.colorscheme("nord")
-        end,
+        config = config,
     },
     -- https://github.com/metalelf0/jellybeans-nvim
     {
