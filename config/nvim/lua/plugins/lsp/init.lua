@@ -4,6 +4,7 @@ local cmp = require("plugins.lsp.cmp")
 local lua_server = require("plugins.lsp.servers.lua")
 local go_server = require("plugins.lsp.servers.go")
 local clangd_server = require("plugins.lsp.servers.clangd")
+local zig_server = require("plugins.lsp.servers.zig")
 
 local dependencies = {
     kind,
@@ -49,6 +50,7 @@ local config = function()
     lua_server.setup()
     go_server.setup()
     clangd_server.setup()
+    zig_server.setup()
 end
 
 return {
