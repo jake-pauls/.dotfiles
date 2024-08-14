@@ -33,7 +33,7 @@ local keys = {
     },
     {
         "<leader>td",
-        function ()
+        function()
             if vim.diagnostic.is_disabled(0) then
                 vim.diagnostic.enable()
             else
@@ -41,6 +41,14 @@ local keys = {
             end
         end,
         desc = "base: Toggle LSP Diagnostics",
+    },
+    {
+        "<leader>rr",
+        function()
+            local name = vim.fn.input("Rename: ")
+            vim.lsp.buf.rename(name)
+        end,
+        desc = "base: LSP Rename"
     },
 }
 
