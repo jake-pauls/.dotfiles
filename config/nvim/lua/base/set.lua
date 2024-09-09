@@ -9,7 +9,7 @@ set.tabstop = 4
 set.softtabstop = 4
 set.shiftwidth = 4
 set.linespace = 0
-set.expandtab = true
+set.expandtab = false
 set.smartindent = true
 
 -- Navigation
