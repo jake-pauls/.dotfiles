@@ -5,6 +5,7 @@ local lua_server = require("plugins.lsp.servers.lua")
 local go_server = require("plugins.lsp.servers.go")
 local clangd_server = require("plugins.lsp.servers.clangd")
 local zig_server = require("plugins.lsp.servers.zig")
+local gdscript_server = require("plugins.lsp.servers.gdscript")
 
 local dependencies = {
     kind,
@@ -59,6 +60,7 @@ local config = function()
     go_server.setup()
     clangd_server.setup()
     zig_server.setup()
+    gdscript_server.setup()
 end
 
 return {

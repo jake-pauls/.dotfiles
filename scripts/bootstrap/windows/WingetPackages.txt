@@ -1,0 +1,14 @@
+Discord.Discord
+voidtools.Everything
+Mozilla.Firefox
+Git.Git
+jftuga.less
+sharkdp.bat
+BurntSushi.ripgrep.MSVC
+OBSProject.OBSStudio
+Obsidian.Obsidian
+Spotify.Spotify
+Valve.Steam
+Starship.Starship
+Microsoft.VisualStudioCode
+WinDirStat.WinDirStat

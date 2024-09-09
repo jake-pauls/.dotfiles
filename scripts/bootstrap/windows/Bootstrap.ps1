@@ -4,14 +4,11 @@
 
 # Simple bootstrap for a Windows Installation
 
-# Install Chocolatey
-iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
-# Install Packages in 'ChocoPackages.txt'
-$packages = Get-Content ".\ChocoPackages.txt"
+# Install Packages in 'WingetPackages.txt'
+$packages = Get-Content ".\WingetPackages.txt"
 foreach($package in $packages) {
     Write-Host "[info] Installing Package: $package"
-    choco install --yes $package
+    winget install -e --id $package
 }
 
 # Config Directory

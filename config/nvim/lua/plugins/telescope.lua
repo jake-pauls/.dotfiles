@@ -139,6 +139,9 @@ local opts = {
             "%.obj",
             "%.a",
             "%.lib",
+            "obj",
+            "lib",
+            "bin",
         },
         layout_strategy = "horizontal",
         layout_config   = {

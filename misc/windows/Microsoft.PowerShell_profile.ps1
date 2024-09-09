@@ -2,16 +2,6 @@
 # https://jakepauls.dev
 # https://github.com/jake-pauls
 
-# Import the Chocolatey Profile that contains the necessary code to enable
-# tab-completions to function for `choco`.
-# Be aware that if you are missing these lines from your profile, tab completion
-# for `choco` will not function.
-# See https://ch0.co/tab-completion for details.
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile"
-}
-
 # Start starship
 Invoke-Expression (&starship init powershell)
 
