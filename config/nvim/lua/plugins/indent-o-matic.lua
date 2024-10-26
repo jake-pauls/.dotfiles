@@ -8,6 +8,7 @@ local config = function()
 end
 
 return {
+    -- https://github.com/Darazaki/indent-o-matic
     {
         "Darazaki/indent-o-matic",
         lazy = false,

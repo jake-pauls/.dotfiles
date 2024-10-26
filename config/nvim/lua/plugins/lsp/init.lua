@@ -50,7 +50,7 @@ local keys = {
     {
         "<leader>rr",
         function()
-            local name = vim.ui.input("Rename: ")
+            local name = vim.fn.input("Rename: ")
             vim.lsp.buf.rename(name)
         end,
         desc = "base: LSP Rename"
