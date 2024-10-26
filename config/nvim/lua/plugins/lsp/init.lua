@@ -1,11 +1,15 @@
 local kind = require("plugins.lsp.kind")
 local cmp = require("plugins.lsp.cmp")
 
-local lua_server = require("plugins.lsp.servers.lua")
-local go_server = require("plugins.lsp.servers.go")
-local clangd_server = require("plugins.lsp.servers.clangd")
-local zig_server = require("plugins.lsp.servers.zig")
-local gdscript_server = require("plugins.lsp.servers.gdscript")
+local servers = {
+    require("plugins.lsp.servers.clangd"),
+    require("plugins.lsp.servers.csharp"),
+    require("plugins.lsp.servers.gdscript"),
+    require("plugins.lsp.servers.go"),
+    require("plugins.lsp.servers.lua"),
+    require("plugins.lsp.servers.python"),
+    require("plugins.lsp.servers.zig"),
+}
 
 local dependencies = {
     kind,
@@ -46,7 +50,7 @@ local keys = {
     {
         "<leader>rr",
         function()
-            local name = vim.fn.input("Rename: ")
+            local name = vim.ui.input("Rename: ")
             vim.lsp.buf.rename(name)
         end,
         desc = "base: LSP Rename"
@@ -56,11 +60,9 @@ local keys = {
 local opts = {}
 
 local config = function()
-    lua_server.setup()
-    go_server.setup()
-    clangd_server.setup()
-    zig_server.setup()
-    gdscript_server.setup()
+    for _, server in pairs(servers) do
+        server.setup()
+    end
 end
 
 return {

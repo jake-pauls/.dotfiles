@@ -12,7 +12,7 @@ local nordopts = {
             italic = true,
         },
         functions = {
-            bold = true,
+            bold = false,
             italic = true,
         },
     },
