@@ -1,0 +1,24 @@
+theme = "nord"
+
+[editor]
+bufferline = "always"
+line-number = "relative"
+middle-click-paste = false
+
+[editor.indent-guides]
+character = "▏"
+render = true
+
+[editor.whitespace]
+render = "all"
+
+[editor.whitespace.characters]
+space = " "
+nbsp = " "
+nnbsp = " "
+tab = " "
+newline = "↵"
+tabpad = " "
+
+[editor.file-picker]
+hidden = false
