@@ -17,12 +17,6 @@ echo "[info] Loading configured dotfiles..."
 cd ~ && mkdir .config
 
 # Manually configured symlinks
-rm ~/.Xresources
-ln -sf $dpath/misc/linux/.Xresources ~/.Xresources
-
-rm ~/.xinitrc
-ln -sf $dpath/misc/linux/.xinitrc ~/.xinitrc
-
 rm ~/.bashrc
 ln -sf $dpath/config/bash/.bashrc ~/.bashrc
 
@@ -41,29 +35,24 @@ echo "[info] Appended \$PATH defaults to ~/.profile."
 
 # .config symlinks
 dotfiles=(
-    "config/alacritty"
-    "config/awesome"
-    "config/git"
-    "config/nitrogen"
-    "config/nvim"
-    "config/picom"
-    "config/polybar"
-    "config/zathura"
+  "config/alacritty"
+  "config/git"
+  "config/nvim"
 )
 
 if [ ! -d "$HOME/.config" ]
 then
-	echo "[info] Creating .config directory in $HOME"
-	mkdir ~/.config
+  echo "[info] Creating .config directory in $HOME"
+  mkdir ~/.config
 fi
 
 # Remove dotfiles in home, symlink to .dotfiles repo
 echo "Symlinking dotfiles to \$HOME"
 for dotfile in "${dotfiles[@]}"; do
-    echo "[warn] Removing ~/.${dotfile}"
-	rm -rf ~/.$dotfile
-    echo "[info] Creating symlink for ~/.${dotfile}"
-	ln -sf $dpath/$dotfile ~/.$dotfile
+  echo "[warn] Removing ~/.${dotfile}"
+  rm -rf ~/.$dotfile
+  echo "[info] Creating symlink for ~/.${dotfile}"
+  ln -sf $dpath/$dotfile ~/.$dotfile
 done
 
 echo "[info] Successfully configured symlinks. Please validate ~/.profile before refreshing your shell."

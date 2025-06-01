@@ -20,6 +20,12 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 [[ $- != *i* ]] && return
 
 ##
+## PATH
+##
+
+export PATH=/home/jake/go/bin:$PATH
+
+##
 ## Aliases
 ##
 
@@ -44,6 +50,9 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+
+# Path
+export PATH=$PATH:~/zig
 
 # Starship Prompt
 eval "$(starship init zsh)"
