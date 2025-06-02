@@ -9,11 +9,11 @@ local nordopts = {
     },
     styles = {
         comments = {
-            italic = true,
+            italic = false,
         },
         functions = {
             bold = false,
-            italic = true,
+            italic = false,
         },
     },
 }

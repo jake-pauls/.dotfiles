@@ -2,13 +2,14 @@ local kind = require("plugins.lsp.kind")
 local cmp = require("plugins.lsp.cmp")
 
 local servers = {
-    require("plugins.lsp.servers.clangd"),
-    require("plugins.lsp.servers.csharp"),
-    require("plugins.lsp.servers.gdscript"),
-    require("plugins.lsp.servers.go"),
-    require("plugins.lsp.servers.lua"),
-    require("plugins.lsp.servers.python"),
-    require("plugins.lsp.servers.zig"),
+    -- Enable as necessary.
+    -- require("plugins.lsp.servers.clangd"),
+    -- require("plugins.lsp.servers.csharp"),
+    -- require("plugins.lsp.servers.gdscript"),
+    -- require("plugins.lsp.servers.go"),
+    -- require("plugins.lsp.servers.lua"),
+    -- require("plugins.lsp.servers.python"),
+    -- require("plugins.lsp.servers.zig"),
 }
 
 local dependencies = {

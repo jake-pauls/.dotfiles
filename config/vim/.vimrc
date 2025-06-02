@@ -7,10 +7,8 @@
 ""
 
 " Tabbing
-set tabstop=2
-set shiftwidth=2
-
-" For indentline plug
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set smartindent
 
