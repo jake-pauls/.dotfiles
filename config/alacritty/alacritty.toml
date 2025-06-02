@@ -1,4 +1,4 @@
-import = [
+general.import = [
     "~/.config/alacritty/themes/nord.toml"
 ]
 
@@ -23,14 +23,14 @@ persistent_logging = false
 TERM = "xterm-256color"
 
 [font]
-size = 10.0
+size = 8.0
 
 [font.bold]
-family = "JetBrainsMonoNerdFont"
+family = "ComicShannsNerdFont"
 style = "Bold"
 
 [font.bold_italic]
-family = "JetBrainsMonoNerdFont"
+family = "ComicShannsNerdFont"
 style = "Bold Italic"
 
 [font.glyph_offset]
@@ -38,11 +38,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "JetBrainsMonoNerdFont"
+family = "ComicShannsNerdFont"
 style = "Italic"
 
 [font.normal]
-family = "JetBrainsMonoNerdFont"
+family = "ComicShannsNerdFont"
 style = "Regular"
 
 [font.offset]
@@ -90,9 +90,6 @@ multiplier = 2
 [selection]
 save_to_clipboard = false
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
-
-[shell]
-program = "/bin/zsh"
 
 [window]
 decorations = "Full"

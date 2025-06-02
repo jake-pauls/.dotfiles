@@ -3,7 +3,7 @@ local g = vim.g
 local api = vim.api
 
 if g.neovide == true then
-    o.guifont = "JetBrainsMono Nerd Font:h10"
+    o.guifont = "ComicShannsNerdFont:h10"
     g.neovide_fullscreen = true
     g.neovide_theme = "auto"
 

@@ -35,7 +35,7 @@ cd $dpath
 git remote set-url origin git@github.com:jake-pauls/.dotfiles.git
 
 # Symlink dotfiles
-cd $dpath/scripts
+cd $dpath/scripts/bootstrap/linux
 bash confsym.sh
 
 # Packages
@@ -67,10 +67,17 @@ cli=(
 misc=(
   "firefox"
   "discord"
+  "flameshot"
+  "nitrogen"
+)
+
+yay=(
+  "comic-shanns-nerd"
 )
 
 # Installation
 sudo pacman -S ${lib[@]} ${file[@]} ${terminal[@]} ${cli[@]} ${misc[@]}
+yay -S ${yay[@]}
 
 # Use dash as the default shell
 echo "[info] Changing default shell to zsh"
