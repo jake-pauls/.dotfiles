@@ -1,5 +1,5 @@
 general.import = [
-    "~/.config/alacritty/themes/nord.toml"
+    "~/.config/alacritty/themes/colibri.toml"
 ]
 
 [colors]
@@ -23,14 +23,14 @@ persistent_logging = false
 TERM = "xterm-256color"
 
 [font]
-size = 8.0
+size = 12.0
 
 [font.bold]
-family = "ComicShannsNerdFont"
+family = "JetBrainsMonoNerdFont"
 style = "Bold"
 
 [font.bold_italic]
-family = "ComicShannsNerdFont"
+family = "JetBrainsMonoNerdFont"
 style = "Bold Italic"
 
 [font.glyph_offset]
@@ -38,11 +38,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "ComicShannsNerdFont"
+family = "JetBrainsMonoNerdFont"
 style = "Italic"
 
 [font.normal]
-family = "ComicShannsNerdFont"
+family = "JetBrainsMonoNerdFont"
 style = "Regular"
 
 [font.offset]
@@ -82,6 +82,10 @@ mods = "Control"
 action = "DecreaseFontSize"
 key = "Minus"
 mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
 
 [scrolling]
 history = 10000

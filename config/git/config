@@ -10,7 +10,7 @@
     helper=cache --timeout 86400
 
 [core]
-    editor=nvim
+    editor=hx
 
 [init]
     defaultBranch=main
